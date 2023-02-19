@@ -11,14 +11,11 @@ export default function Home() {
                     name="description"
                     content="Portfolio of Mikhail Katsman"
                 />
-                <meta
-                    name="viewport"
-                    content="user-scalable=0"
-                />
+                <meta name="viewport" content="user-scalable=0" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-              <Faces />
+                <Faces />
             </main>
         </>
     );

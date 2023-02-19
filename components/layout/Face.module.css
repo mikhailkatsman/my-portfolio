@@ -4,7 +4,7 @@
     /* MAYBE REMOVE */
     justify-content: center;
 
-    box-shadow: 0 0 0 0.5rem red;
+    /* box-shadow: 0 0 0 0.5rem red; */
 }
 
 /* POSITIONS */
@@ -19,6 +19,9 @@
     margin-right: -9rem;
 
     z-index: 1;
+
+    perspective: 300rem;
+    perspective-origin: -260% -300%;
 }
 
 #face-2 {
@@ -32,6 +35,9 @@
     margin-bottom: 4.3rem;
 
     z-index: 1;
+
+    perspective: 800rem;
+    perspective-origin: -1500% 900%;
 }
 
 #face-3 {
