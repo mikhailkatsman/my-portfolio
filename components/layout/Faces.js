@@ -13,7 +13,7 @@ export default function Faces() {
                 </Face>
                 <Face id="face-2" plain="z-plain">
                     <Card id="card-2" type="pivot-left">
-                        <h1>HEY!</h1>
+                        <h1>HI!</h1>
                     </Card>
                 </Face>
             </div>
