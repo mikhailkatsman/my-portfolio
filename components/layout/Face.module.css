@@ -49,7 +49,10 @@
     margin-top: -9.8rem;
     margin-bottom: -15.5rem;
 
-    z-index: 2;
+    z-index: 3;
+
+    perspective: 800rem;
+    perspective-origin: -300% 700%;
 }
 
 #face-4 {
