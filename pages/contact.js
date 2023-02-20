@@ -5,12 +5,15 @@ import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
 
 export default function Contact() {
-    const [pageState, setPageState] = useState('transition-in');
+    const [pageState, setPageState] = useState({
+        direction: 'left',
+        type: 'transition-in',
+    });
 
     return (
         <>
             <Head>
-                <title>Projects | Mikhail Katsman</title>
+                <title>Mikhail Katsman | Contact</title>
                 <meta charSet="UTF-8" />
                 <meta
                     name="description"
@@ -20,7 +23,7 @@ export default function Contact() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <section className={`face-section ${pageState}`}>
+                <section className={`face-section ${pageState.direction} ${pageState.type}`}>
                     <div className="face-section-row">
                         <Face id="face-1" plain="y-plain">
                             <Card id="card-1" type="">
