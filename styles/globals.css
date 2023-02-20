@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* TEMP */
+/* TEXT */
 h1 {
     font-size: 16rem;
     font-weight: 700;
@@ -36,8 +36,15 @@ h1 {
     color: white;
 }
 
-p {
+h2 {
     font-size: 8rem;    
+    font-weight: 700;
+    color: white;
+    line-height: 1.1;
+}
+
+p {
+    font-size: 4.8rem;    
     font-weight: 700;
     color: white;
     line-height: 1.1;
@@ -57,4 +64,59 @@ p {
 .z-plain {
   transform: rotateX(16.8deg) rotateY(60deg);
 
+}
+
+/* SECTIONS STYLING */
+
+.face-section {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    max-width: 60rem;
+
+    opacity: 1;
+
+    /* box-shadow: 0 0 0 0.5rem green; */
+}
+
+.face-section-row {
+    display: flex;
+}
+
+.transition-out {
+    animation-name: transition-out;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.transition-in {
+    animation-name: transition-in;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+    transform: translate(50%, 50%);
+}
+
+@keyframes transition-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes transition-in {
+    0% {
+        transform: translate(50%, 50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
 }
