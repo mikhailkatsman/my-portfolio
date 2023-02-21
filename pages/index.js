@@ -48,6 +48,8 @@ export default function Home() {
                             >
                                 &#8592; Contact.
                             </Button>
+                        </Card>
+                        <Card id="card-4" type="float-up" orientation="column">
                             <Button
                                 push="projects"
                                 setTransition={setPageState}

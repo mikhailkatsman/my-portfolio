@@ -4,13 +4,17 @@ html {
     font-family: 'Roboto Mono', monospace;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-size: 62.5%;
     background-color: #111; 
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
     margin: 0;
     padding: 0; 
     
@@ -71,13 +75,12 @@ p {
 .face-section {
     display: flex;
     flex-direction: column;
-
-    margin: 0 auto;
     max-width: 60rem;
+    height: 60rem;
 
     opacity: 1;
 
-    /* box-shadow: 0 0 0 0.5rem green; */
+    /* box-shadow: 0 0 0 0.5rem lightgreen; */
 }
 
 .face-section-row {
@@ -99,13 +102,13 @@ p {
 }
 
 .left {
-    --x: -65%;
+    --x: -95%;
     --y: 50%;
     transform: translate(var(--x), var(--y));
 }
 
 .right {
-    --x: 50%;
+    --x: 95%;
     --y: 50%;
     transform: translate(var(--x), var(--y));
 }

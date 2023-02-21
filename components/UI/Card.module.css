@@ -1,20 +1,15 @@
 .card {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100%;
     height: 100%;
 
-    justify-content:space-between;
+    justify-content: center;
     align-items: center;
 
-    /* box-shadow: 0 0 0 0.2rem white;
-    border-radius: 1rem; */
+    /* box-shadow: 0 0 0 0.2rem yellow; */
 
     box-sizing: border-box;
-    padding: 5rem;
-
-    /* temp */
-    /* background-color: #111; */
 }
 
 .column {
@@ -43,8 +38,6 @@
     animation-duration: 1.3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-
-    animation-delay: 0.5s;
 }
 
 .float-up {
@@ -56,8 +49,6 @@
     animation-duration: 1.3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-
-    animation-delay: 1s;
 }
 
 @keyframes pivot {
@@ -96,4 +87,22 @@
         transform: translateZ(0rem);
         opacity: 1;
     }
+}
+
+/* TIMINGS */
+
+#card-1 {
+    animation-delay: 0.3s;
+}
+
+#card-2 {
+    animation-delay: 0s;
+}
+
+#card-3 {
+    animation-delay: 0.8s;
+}
+
+#card-4 {
+    animation-delay: 1s;
 }
