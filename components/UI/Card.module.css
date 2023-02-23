@@ -7,7 +7,10 @@
     justify-content: center;
     align-items: center;
 
-    /* box-shadow: 0 0 0 0.2rem yellow; */
+    background-color: #222;
+
+    border-radius: 2rem;
+    box-shadow: 0 0 0 0.4rem white;
 
     box-sizing: border-box;
 }
@@ -18,7 +21,7 @@
 
 .pivot-left {
     transform-origin: left;
-    transform: rotateY(-135deg);
+    transform: rotateY(-145deg);
 
     opacity: 0;
 
@@ -30,7 +33,7 @@
 
 .pivot-right {
     transform-origin: right;
-    transform: rotateY(-135deg);
+    transform: rotateY(-145deg);
 
     opacity: 0;
     
@@ -53,7 +56,7 @@
 
 @keyframes pivot {
     0% {
-        transform: rotateY(-135deg);
+        transform: rotateY(-145deg);
     }
     40% {
         opacity: 0;
@@ -104,5 +107,9 @@
 }
 
 #card-4 {
-    animation-delay: 1s;
+    animation-delay: 0.3s;
+}
+
+#card-5 {
+    animation-delay: 0s;
 }

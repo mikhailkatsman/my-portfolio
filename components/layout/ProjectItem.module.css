@@ -1,0 +1,21 @@
+.project-item {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.revealed {
+    opacity: 1;
+}
+
+.z3 {
+    z-index: 3;
+}
+
+.z2 {
+    z-index: 2;
+}
+
+.z1 {
+    z-index: 1;
+}

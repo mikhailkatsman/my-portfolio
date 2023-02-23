@@ -1,35 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 html {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-size: 62.5%;
-    background-color: #111; 
+    background-color: #111;
 
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    margin: 0;
-    padding: 0; 
-    
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
-
+    scrollbar-width: none; 
+    overflow-x: hidden;/* for Firefox */
+    overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
 
-.example::-webkit-scrollbar {
-    display: none;
+.faces {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    height: 60rem;
+
+    z-index: 111;
+
+    margin: auto;
+    margin-top: calc(50vmax - 50%);
+
+    /* box-shadow: 0 0 0 0.5rem lightgreen; */
+}
+
+.faces-row {
+    display: flex;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 3.2rem;
+
+    z-index: 999;
+    text-align: center;
+}
+
+footer > p {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 0;
+    margin-top: 0.8rem;
 }
 
 /* TEXT */
@@ -41,14 +70,14 @@ h1 {
 }
 
 h2 {
-    font-size: 8rem;    
+    font-size: 8rem;
     font-weight: 700;
     color: white;
     line-height: 1.1;
 }
 
 p {
-    font-size: 4.8rem;    
+    font-size: 4.8rem;
     font-weight: 700;
     color: white;
     line-height: 1.1;
@@ -56,48 +85,45 @@ p {
 
 /* PLAINS */
 .x-plain {
-  transform: rotateX(60deg) rotateZ(-45deg);
-
+    transform: rotateX(60deg) rotateZ(-45deg);
 }
 
 .y-plain {
-  transform: rotateX(-16.8deg) rotateY(60deg);
-
+    transform: rotateX(-16.8deg) rotateY(60deg);
 }
 
 .z-plain {
-  transform: rotateX(16.8deg) rotateY(60deg);
-
+    transform: rotateX(16.8deg) rotateY(60deg);
 }
 
-/* SECTIONS STYLING */
+.list-section {
+    width: 60rem;
 
-.face-section {
-    display: flex;
-    flex-direction: column;
-    max-width: 60rem;
-    height: 60rem;
+    margin: auto;
 
     opacity: 1;
 
-    /* box-shadow: 0 0 0 0.5rem lightgreen; */
+    /* box-shadow: 0 0 0 0.5rem lightskyblue; */
 }
 
-.face-section-row {
-    display: flex;
+.stick {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .transition-out {
     animation-name: transition-out;
     animation-duration: 0.5s;
-    animation-timing-function: cubic-bezier(.65,0,.7,.38);
+    animation-timing-function: cubic-bezier(0.65, 0, 0.7, 0.38);
     animation-fill-mode: forwards;
 }
 
 .transition-in {
     animation-name: transition-in;
     animation-duration: 0.5s;
-    animation-timing-function: cubic-bezier(.56,.94,.46,1);
+    animation-timing-function: cubic-bezier(0.56, 0.94, 0.46, 1);
     animation-fill-mode: forwards;
 }
 

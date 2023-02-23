@@ -10,10 +10,11 @@ export default function Button(props) {
 
         router.prefetch(`/${props.push}`);
 
-        props.setTransition({
+        props.setTransition(prev => ({
+            ...prev,
             type: 'transition-out',
             direction: props.direction,
-        });
+        }));
 
         setTimeout(() => {
             router.push(`/${props.push}`);
