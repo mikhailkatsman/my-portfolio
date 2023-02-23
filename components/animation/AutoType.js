@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 
 export default function AutoType(props) {
-    const [generatedText, setGeneratedText] = useState('');
-    const inputText = props.text;
+    const [generatedText, setGeneratedText] = useState([]);
+    const inputText = props.children;
 
-    function typeText() {
+    useEffect(() => {
         for (let i = 0; i < inputText.length; i++) {
-            setGeneratedText((prev) => {
-                prev += inputText.charAt(i);
-            });
-            setTimeout(typeText, 50);
-        }   
-    }
+            setTimeout(() => {
+                setGeneratedText((prev) => [
+                    ...prev,
+                    inputText[i],
+                ]);
+            }, 100 * i);
+        }  
+    }, [inputText]);
 
     return (
         <p>

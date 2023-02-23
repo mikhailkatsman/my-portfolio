@@ -12,15 +12,15 @@ export default function Projects() {
     });
     const [listState, setListState] = useState("");
 
-    useEffect(() => {
-        window.addEventListener(
-            "scroll",
-            () => {
-                console.log("scrolling detected");
-            },
-            { once: true }
-        );
-    }, []);
+    // useEffect(() => {
+    //     window.addEventListener(
+    //         "scroll",
+    //         () => {
+    //             console.log("scrolling detected");
+    //         },
+    //         { once: true }
+    //     );
+    // }, []);
 
     return (
         <>

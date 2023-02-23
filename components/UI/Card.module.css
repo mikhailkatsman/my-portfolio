@@ -7,10 +7,10 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #222;
+    /* background-color: #222; */
 
     border-radius: 2rem;
-    box-shadow: 0 0 0 0.4rem white;
+    /* box-shadow: 0 0 0 0.3rem white; */
 
     box-sizing: border-box;
 }
@@ -103,11 +103,11 @@
 }
 
 #card-3 {
-    animation-delay: 0.8s;
+    animation-delay: 0.5s;
 }
 
 #card-4 {
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 
 #card-5 {

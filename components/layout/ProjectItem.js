@@ -10,20 +10,22 @@ export default function ProjectItem(props) {
 
     useEffect(() => {
         const observer = new IntersectionObserver(([element]) => {
-            console.log('item on screen');
-            setOnScreen(element.isIntersecting);
+            if (element.isIntersecting && !onScreen) {
+                setOnScreen(true);
+                observer.unobserve(currentItem);
+            }
         }, {
             root: null,
             rootMargin: '1px',
             threshold: 0.1,
         });
-
+        
         var currentItem = item.current;
         observer.observe(currentItem);
-
+        
         return () => {
             observer.unobserve(currentItem);
-        };
+        }
     }, []);
 
     return (
