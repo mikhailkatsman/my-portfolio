@@ -15,7 +15,7 @@ export default function ProjectItem(props) {
         }, {
             root: null,
             rootMargin: '1px',
-            threshold: 0.5,
+            threshold: 0.1,
         });
 
         var currentItem = item.current;
