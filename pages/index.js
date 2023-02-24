@@ -50,6 +50,7 @@ export default function Home() {
                             &#8592; Contact.
                         </Button>
                     </Card>
+                    <div style={{ height: "2.8rem" }} />
                     <Card id="card-4" type="float-up" orientation="column">
                         <Button
                             push="projects"
@@ -61,7 +62,9 @@ export default function Home() {
                     </Card>
                 </Face>
             </div>
-            <footer><p>&#169; Mikhail Katsman</p></footer>
+            <footer>
+                <p>&#169; Mikhail Katsman</p>
+            </footer>
         </>
     );
 }
