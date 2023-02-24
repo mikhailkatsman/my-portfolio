@@ -9,7 +9,7 @@ import Card from "@/components/UI/Card";
 import ProjectList from "@/components/layout/ProjectList";
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const { serverRuntimeConfig } = getConfig();
     const dirPath = path.join(serverRuntimeConfig.rootDir, '/projects');
 
