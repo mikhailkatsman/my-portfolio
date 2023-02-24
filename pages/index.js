@@ -29,7 +29,7 @@ export default function Home() {
                     <Face id="face-1" plain="y-plain">
                         <Card id="card-1" type="pivot-right">
                             <AutoType>
-                                HI! This is my portfolio page.
+                                HELLO! This is my portfolio page!
                             </AutoType>
                             {/* <h2>HI! This is my portfolio page.</h2> */}
                         </Card>
