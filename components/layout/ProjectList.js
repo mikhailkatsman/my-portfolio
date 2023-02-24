@@ -1,15 +1,12 @@
-import ProjectItem from './ProjectItem';
+import ProjectItem from "./ProjectItem";
+import classes from "./ProjectList.module.css";
 
-import classes from './ProjectList.module.css';
-
-export default function ProjectList() {
+export default function ProjectList(props) {
     return (
-        <>
-            <div className={classes.list}>
-                <ProjectItem zIndex='z3'/>
-                <ProjectItem zIndex='z2'/>
-                <ProjectItem zIndex='z1'/>
-            </div>
-        </>
+        <div className={classes.list}>
+            {props.projectsDir.map((name) => 
+                <ProjectItem key={name} projectName={name} />
+            )}
+        </div>
     );
 }

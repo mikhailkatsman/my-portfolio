@@ -33,7 +33,6 @@ export default function ProjectItem(props) {
             ref={item} 
             className={`
                 faces-row 
-                ${classes[props.zIndex]}
                 ${classes["project-item"]}
                 ${onScreen ? classes.revealed : ''}
             `}
@@ -45,7 +44,7 @@ export default function ProjectItem(props) {
             </Face>
             <Face id="face-5" plain="y-plain">
                 <Card id="card-5" type={onScreen ? 'pivot-left' : ''}>
-                    <h2>DESCRIPTION</h2>
+                    <h2>{props.projectName}</h2>
                 </Card>
             </Face>
         </div>
