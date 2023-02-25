@@ -22,16 +22,27 @@ body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
 
-body::before {
+/* body::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    inset: 0;
+    width: 100vw;
     height: 100vh;
 
     background: linear-gradient(#eee, #bbb);
-    background-attachment: fixed;
+} */
+
+.gradient {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(#eee, #bbb);
+}
+
+.content {
+    position: absolute;
 }
 
 .faces {
