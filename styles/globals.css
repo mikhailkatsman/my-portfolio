@@ -26,8 +26,6 @@ body::-webkit-scrollbar {
     content: "";
     position: fixed;
     inset: 0;
-    width: 100vw;
-    height: 100vh;
 
     background: linear-gradient(#eee, #bbb);
 } */
@@ -35,14 +33,13 @@ body::-webkit-scrollbar {
 .gradient {
     position: fixed;
     inset: 0;
-    width: 100vw;
-    height: 100vh;
 
     background: linear-gradient(#eee, #bbb);
 }
 
 .content {
     position: absolute;
+    inset: 0;
 }
 
 .faces {
