@@ -1,7 +1,6 @@
 import { useState } from "react";
-import fs from "fs";
-import path from "path";
-import getConfig from 'next/config';
+// import fs from "fs";
+// import path from "path";
 
 import Head from "next/head";
 import Face from "@/components/layout/Face";
@@ -9,19 +8,9 @@ import Card from "@/components/UI/Card";
 import ProjectList from "@/components/layout/ProjectList";
 
 
-export async function getServerSideProps() {
-    const { serverRuntimeConfig } = getConfig();
-    const dirPath = path.join(serverRuntimeConfig.rootDir, '/projects');
-
-    const projectsDir = fs
-        .readdirSync(dirPath, { withFileTypes: true })
-        .filter((dirent) => dirent.isDirectory())
-        .map((dirent) => dirent.name);
-
-    return {
-        props: { projectsDir },
-    };
-}
+// export async function getStaticProps() {
+//     // import images
+// }
 
 export default function Projects(props) {
     const [facesState, setFacesState] = useState({
@@ -80,7 +69,7 @@ export default function Projects(props) {
                 </div>
             </header>
             <main className={`list-section ${listState}`}>
-                <ProjectList projectsDir={props.projectsDir}/>
+                <ProjectList />
             </main>
             <footer>
                 <p>&#169; Mikhail Katsman</p>

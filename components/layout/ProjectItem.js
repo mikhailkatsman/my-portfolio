@@ -43,8 +43,9 @@ export default function ProjectItem(props) {
                 </Card>
             </Face>
             <Face id="face-5" plain="y-plain">
-                <Card id="card-5" type={onScreen ? 'pivot-left' : ''}>
-                    <h2>{props.projectName}</h2>
+                <Card id="card-5" type={onScreen ? 'pivot-left' : ''} orientation="column">
+                    <h2>{props.name}</h2>
+                    <p>{props.excerpt}</p>
                 </Card>
             </Face>
         </div>

@@ -18,9 +18,7 @@ export default function AutoType(props) {
     }
 
     useEffect(() => {
-        setTimeout(() => {
-            tick(1);         
-        }, Math.floor(Math.random() * (1000 - 500) + 500));
+        tick(1);         
     }, []);
 
     return <p>{generatedText}</p>;
