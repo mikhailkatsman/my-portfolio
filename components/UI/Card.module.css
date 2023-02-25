@@ -10,8 +10,8 @@
 
     /* background-color: #222; */
 
-    border-radius: 2rem;
-    box-shadow: 0 0 0 0.3rem white;
+    /* border-radius: 2rem;
+    box-shadow: 0 0 0 0.3rem white; */
 
     box-sizing: border-box;
 }
@@ -22,24 +22,24 @@
 
 .pivot-left {
     transform-origin: left;
-    transform: rotateY(-145deg);
+    transform: rotateY(-45deg);
 
     opacity: 0;
 
     animation-name: pivot;
-    animation-duration: 1.3s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .pivot-right {
     transform-origin: right;
-    transform: rotateY(-145deg);
+    transform: rotateY(-45deg);
 
     opacity: 0;
     
     animation-name: pivot;
-    animation-duration: 1.3s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
@@ -50,23 +50,20 @@
     opacity: 0;
 
     animation-name: float;
-    animation-duration: 1.3s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
 @keyframes pivot {
     0% {
-        transform: rotateY(-145deg);
+        transform: rotateY(-45deg);
     }
-    40% {
-        opacity: 0;
-    }
-    70% {
+    65% {
         opacity: 1;
-    }    
-    80% {
-        transform: rotateY(5deg);
+    }  
+    75% {
+        transform: rotateY(4deg);
     }
     100% {
         transform: rotateY(0deg);
@@ -85,7 +82,7 @@
         opacity: 1;
     }    
     80% {
-        transform: translateZ(4rem);
+        transform: translateZ(2rem);
     }
     100% {
         transform: translateZ(0rem);
@@ -96,11 +93,14 @@
 /* TIMINGS */
 
 #card-1 {
-    animation-delay: 0.3s;
+    animation-delay: 0s;
 }
 
 #card-2 {
-    animation-delay: 0s;
+    animation-delay: 0.3s;
+
+    border-radius: 2rem;
+    box-shadow: 0 0 0 0.1rem #111;
 }
 
 #card-3 {

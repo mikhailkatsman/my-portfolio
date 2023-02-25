@@ -16,13 +16,6 @@ export default function Home() {
         <>
             <Head>
                 <title>Mikhail Katsman</title>
-                <meta charSet="UTF-8" />
-                <meta
-                    name="description"
-                    content="Portfolio of Mikhail Katsman"
-                />
-                <meta name="viewport" content="user-scalable=0" />
-                <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={`faces ${facesState.direction} ${facesState.type}`}>
                 <div className="faces-row">
@@ -43,6 +36,7 @@ export default function Home() {
                 <Face id="face-3" plain="x-plain">
                     <Card id="card-3" type="float-up" orientation="column">
                         <Button
+                            color="yellow"
                             push="contact"
                             setTransition={setFacesState}
                             direction="left"
@@ -53,6 +47,7 @@ export default function Home() {
                     <div style={{ height: "2.8rem" }} />
                     <Card id="card-4" type="float-up" orientation="column">
                         <Button
+                            color="blue"
                             push="projects"
                             setTransition={setFacesState}
                             direction="right"

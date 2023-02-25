@@ -80,3 +80,7 @@
     perspective: 750rem;
     perspective-origin: 1000% 1000%;
 }
+
+.plain {
+    transform: translate(0,0,0);
+}

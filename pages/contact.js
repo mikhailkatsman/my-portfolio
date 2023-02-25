@@ -14,26 +14,26 @@ export default function Contact() {
         <>
             <Head>
                 <title>Mikhail Katsman | Contact</title>
-                <meta charSet="UTF-8" />
-                <meta
-                    name="description"
-                    content="Projects of Mikhail Katsman"
-                />
-                <meta name="viewport" content="user-scalable=0" />
-                <link rel="icon" href="/favicon.ico" />
             </Head>
-            <header className={`${pageState.direction} ${pageState.type}`}>
-                <div className="header-row">
-                    <Face id="face-1" plain="y-plain">
-                        <Card id="card-1" type="">
-                            <h2>Contact.</h2>
-                        </Card>
-                    </Face>
-                    <Face id="face-2" plain="z-plain">
-                        <Card id="card-2" type="pivot-left">
-                            <h1>HI!</h1>
-                        </Card>
-                    </Face>
+            <header>
+                <div className={`
+                        faces 
+                        ${pageState.direction} 
+                        ${pageState.type}
+                    `}
+                >
+                    <div className="faces-row">
+                        <Face id="face-1" plain="y-plain">
+                            <Card id="card-1" type="">
+                                <h2>Contact.</h2>
+                            </Card>
+                        </Face>
+                        <Face id="face-2" plain="z-plain">
+                            <Card id="card-2" type="pivot-left">
+                                <h1>HI!</h1>
+                            </Card>
+                        </Face>
+                    </div>
                 </div>
             </header>
             <footer><p>&#169; Mikhail Katsman</p></footer>

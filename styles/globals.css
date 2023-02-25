@@ -11,7 +11,7 @@ html {
 
 body {
     font-size: 62.5%;
-    background-color: #111;
+    background-color: #eee;
 
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; 
@@ -53,8 +53,10 @@ footer {
 }
 
 footer > p {
-    font-size: 1.2rem;
-    color: #444;
+    font-size: 1rem;
+
+    color: #555;
+
     margin: 0;
     margin-top: 0.8rem;
 }
@@ -64,21 +66,33 @@ h1 {
     font-size: 16rem;
     font-weight: 700;
     line-height: 0;
-    color: white;
+
+    color: #111;
 }
 
 h2 {
+    font-size: 11rem;
+    font-weight: 700;
+    line-height: 1.1;
+    
+    color: #111;
+}
+
+h3 {
     font-size: 8rem;
     font-weight: 700;
-    color: white;
     line-height: 1.1;
+    
+    color: #111;
+    text-shadow: -5rem 5rem 4rem #bbb;
 }
 
 p {
-    font-size: 4.8rem;
+    font-size: 3.2rem;
     font-weight: 700;
-    color: white;
     line-height: 1.1;
+    
+    color: #111;
 }
 
 /* PLAINS */

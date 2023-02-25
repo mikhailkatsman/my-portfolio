@@ -4,15 +4,21 @@
     font-size: 4.8rem;
     font-weight: 700;
     padding: 1.1rem 3.2rem 1rem 3.2rem;
-    color: #fff;
+    color: #111;
+
+    text-shadow: -3rem 3rem 3rem #888;
 
     border: none;
     cursor: pointer;
 
     opacity: 1;
-    transition: opacity 0.2s;
+    transition: background-color 0.4s;
 }
 
+.blue { --bg: #00f }
+.yellow { --bg: #fc0 }
+
 .button:hover {
-    opacity: 0.8;
+    background-color: var(--bg);
+    text-shadow: none;
 }

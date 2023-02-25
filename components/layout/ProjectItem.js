@@ -39,12 +39,12 @@ export default function ProjectItem(props) {
         >
             <Face id="face-4" plain="z-plain">
                 <Card id="card-4" type={onScreen ? 'pivot-right' : ''}>
-                    <h2>PICTURE</h2>
+                    <h3>PICTURE</h3>
                 </Card>
             </Face>
             <Face id="face-5" plain="y-plain">
                 <Card id="card-5" type={onScreen ? 'pivot-left' : ''} orientation="column">
-                    <h2>{props.name}</h2>
+                    <h3>{props.name}</h3>
                     <p>{props.excerpt}</p>
                 </Card>
             </Face>
