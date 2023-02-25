@@ -25,11 +25,13 @@ body::-webkit-scrollbar {
 body::before {
     content: "";
     position: fixed;
-    inset: 0 0 0 0;
-    width: 100vw;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
 
     background: linear-gradient(#eee, #bbb);
+    background-attachment: fixed;
 }
 
 .faces {
