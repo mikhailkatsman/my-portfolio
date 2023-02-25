@@ -36,7 +36,7 @@ export default function Home() {
                 <Face id="face-3" plain="x-plain">
                     <Card id="card-3" type="float-up" orientation="column">
                         <Button
-                            color="yellow"
+                            color="blue"
                             push="contact"
                             setTransition={setFacesState}
                             direction="left"
@@ -47,7 +47,7 @@ export default function Home() {
                     <div style={{ height: "2.8rem" }} />
                     <Card id="card-4" type="float-up" orientation="column">
                         <Button
-                            color="blue"
+                            color="yellow"
                             push="projects"
                             setTransition={setFacesState}
                             direction="right"
