@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
     z-index: -1;
     position: fixed;
     inset: 0;
-    background: linear-gradient(#eee, #bbb);
+    background: linear-gradient(#eee, #aaa);
 }
 
 .faces {
@@ -61,7 +61,7 @@ footer {
 footer > p {
     font-size: 1rem;
 
-    color: #555;
+    color: #333;
 
     margin: 0;
     margin-top: 0.8rem;

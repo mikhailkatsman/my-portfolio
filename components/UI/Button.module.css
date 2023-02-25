@@ -19,7 +19,7 @@
     box-sizing: content-box;
 
     opacity: 1;
-    transition: background-color 0.4s;
+    transition: background-color 0.3s;
 }
 
 .blue { --bg: #08f }
