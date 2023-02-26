@@ -33,7 +33,7 @@ export default function Projects(props) {
             <Head>
                 <title>Mikhail Katsman | Projects</title>
             </Head>
-            <header>
+            <header>        
                 <div
                     className={`
                         faces

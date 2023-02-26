@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700;800&display=swap');
 
 html {
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Inconsolata', monospace;
 }
 
 * {
@@ -11,6 +11,8 @@ html {
 
 body {
     font-size: 62.5%;
+
+    -webkit-tap-highlight-color: none;
 
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; 
@@ -22,24 +24,14 @@ body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
 
-/* body::before {
-    content: "";
+.background {
     position: fixed;
     inset: 0;
+    pointer-events: none;
+
+    z-index: -1;
 
     background: linear-gradient(#eee, #bbb);
-} */
-
-.gradient {
-    position: fixed;
-    inset: 0;
-
-    background: linear-gradient(#eee, #bbb);
-}
-
-.content {
-    position: absolute;
-    inset: 0;
 }
 
 .faces {
@@ -83,7 +75,7 @@ footer > p {
 /* TEXT */
 h1 {
     font-size: 16rem;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 0;
 
     color: #111;
@@ -99,7 +91,7 @@ h2 {
 
 h3 {
     font-size: 8rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.1;
     
     color: #111;
@@ -108,7 +100,7 @@ h3 {
 
 p {
     font-size: 3.2rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.1;
     
     color: #111;

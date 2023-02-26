@@ -21,5 +21,5 @@ export default function AutoType(props) {
         tick(1);         
     }, []);
 
-    return <p>{generatedText}</p>;
+    return <h3>{generatedText}</h3>;
 }
