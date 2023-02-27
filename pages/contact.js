@@ -36,7 +36,6 @@ export default function Contact() {
                     </div>
                 </div>
             </header>
-            <footer><p>&#169; Mikhail Katsman</p></footer>
         </>
     );
 }

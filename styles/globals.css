@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600;700;800&display=swap');
 
 html {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Source Code Pro', monospace;
 }
 
 * {
@@ -90,8 +90,8 @@ h2 {
 }
 
 h3 {
-    font-size: 8rem;
-    font-weight: 600;
+    font-size: 6rem;
+    font-weight: 700;
     line-height: 1.1;
     
     color: #111;
@@ -106,18 +106,15 @@ p {
     color: #111;
 }
 
+.arr1 { font-size: 13rem; font-weight: 800; }
+.arr2 { font-size: 11rem; font-weight: 600; }
+
 /* PLAINS */
-.x-plain {
-    transform: rotateX(60deg) rotateZ(-45deg);
-}
+.x-plain { transform: rotateX(60deg) rotateZ(-45deg) }
 
-.y-plain {
-    transform: rotateX(-16.8deg) rotateY(60deg);
-}
+.y-plain { transform: rotateX(-16.8deg) rotateY(60deg) }
 
-.z-plain {
-    transform: rotateX(16.8deg) rotateY(60deg);
-}
+.z-plain { transform: rotateX(16.8deg) rotateY(60deg) }
 
 .list-section {
     width: 60rem;

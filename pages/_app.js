@@ -19,6 +19,9 @@ export default function App({ Component, pageProps }) {
 			</Head>
             <div className="background" />
 			<Component {...pageProps} />
+			<footer>
+				<p>&#169; Mikhail Katsman</p>
+			</footer>
 		</>
 	);
 }

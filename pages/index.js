@@ -48,7 +48,7 @@ export default function Home() {
 								setTransition={setFacesState}
 								direction="left"
 							>
-								<h2>&#8592;</h2>Contact.
+								<div className="arr1">&larr;</div>Contact.
 							</Button>
 						</Card>
 						<div style={{ height: "2.8rem" }} />
@@ -59,15 +59,12 @@ export default function Home() {
 								setTransition={setFacesState}
 								direction="right"
 							>
-								<h2>&#8595;</h2>Projects.
+								<div className="arr2">&darr;</div>Projects.
 							</Button>
 						</Card>
 					</Face>
 				</div>
 			</header>
-			<footer>
-				<p>&#169; Mikhail Katsman</p>
-			</footer>
 		</>
 	);
 }

@@ -1,71 +1,80 @@
 import { useState } from "react";
-// import fs from "fs";
-// import path from "path";
+import fs from "fs/promises";
+import path from "path";
 
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
 import ProjectList from "@/components/layout/ProjectList";
 
-// export async function getStaticProps() {
-//     // import images
-// }
+export async function getStaticProps() {
+	const imgDirPath = path.join(process.cwd(), "public", "img");
+	const imgFileNames = await fs.readdir(imgDirPath);
+
+	const imgs = imgFileNames.map((fileName) => {
+		return {
+			fileName,
+			filePath: path.join(imgDirPath, fileName),
+		};
+	});
+
+	return {
+		props: { imgs },
+	};
+}
 
 export default function Projects(props) {
-    const [facesState, setFacesState] = useState({
-        direction: "right",
-        type: "transition-in",
-    });
-    const [listState, setListState] = useState("");
+	const [facesState, setFacesState] = useState({
+		direction: "right",
+		type: "transition-in",
+	});
+	const [listState, setListState] = useState("");
 
-    // useEffect(() => {
-    //     window.addEventListener(
-    //         "scroll",
-    //         () => {
-    //             console.log("scrolling detected");
-    //         },
-    //         { once: true }
-    //     );
-    // }, []);
+	// useEffect(() => {
+	//     window.addEventListener(
+	//         "scroll",
+	//         () => {
+	//             console.log("scrolling detected");
+	//         },
+	//         { once: true }
+	//     );
+	// }, []);
 
-    return (
-        <>
-            <Head>
-                <title>Mikhail Katsman | Projects</title>
-            </Head>
-            <header>        
-                <div
-                    className={`
+	return (
+		<>
+			<Head>
+				<title>Mikhail Katsman | Projects</title>
+			</Head>
+			<header>
+				<div
+					className={`
                         faces
                         ${facesState.direction} 
                         ${facesState.type}
                     `}
-                >
-                    <div className="faces-row">
-                        <Face id="face-1" plain="y-plain">
-                            <Card id="card-1" type="">
-                                <h2>Projects.</h2>
-                            </Card>
-                        </Face>
-                        <Face id="face-2" plain="z-plain">
-                            <Card id="card-2" type="pivot-left">
-                                <h1>MAP</h1>
-                            </Card>
-                        </Face>
-                    </div>
-                    <Face id="face-3" plain="x-plain">
-                        <Card id="card-1" type="float-up">
-                            <h3>Scroll down.</h3>
-                        </Card>
-                    </Face>
-                </div>
-            </header>
-            <main className={`list-section ${listState}`}>
-                <ProjectList />
-            </main>
-            <footer>
-                <p>&#169; Mikhail Katsman</p>
-            </footer>
-        </>
-    );
+				>
+					<div className="faces-row">
+						<Face id="face-1" plain="y-plain">
+							<Card id="card-1" type="">
+								<h2>Projects.</h2>
+							</Card>
+						</Face>
+						<Face id="face-2" plain="z-plain">
+							<Card id="card-2" type="pivot-left">
+								<h1>MAP</h1>
+							</Card>
+						</Face>
+					</div>
+					<Face id="face-3" plain="x-plain">
+						<Card id="card-1" type="float-up">
+							<h3>Scroll down.</h3>
+						</Card>
+					</Face>
+				</div>
+			</header>
+			<main className={`list-section ${listState}`}>
+				<ProjectList imgs={props.imgs}/>
+			</main>
+		</>
+	);
 }
