@@ -46,7 +46,7 @@ export default function ProjectItem(props) {
 			<Face id="face-4" plain="z-plain">
 				<Card id="card-4" type={onScreen ? "pivot-right" : ""}>
 					<Image 
-                        src={`/${props.imgPath}`}
+                        src={props.imgPath}
                         alt={props.imgPath} 
                         fill
                     />
