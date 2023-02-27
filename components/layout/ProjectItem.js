@@ -22,7 +22,7 @@ export default function ProjectItem(props) {
 			{
 				root: null,
 				rootMargin: "1px",
-				threshold: 0.1,
+				threshold: 0.3,
 			}
 		);
 
@@ -44,23 +44,30 @@ export default function ProjectItem(props) {
             `}
 		>
 			<Face id="face-4" plain="z-plain">
-				<Card id="card-4" type={onScreen ? "pivot-right" : ""}>
+				<Card id="card-img" type={onScreen ? "pivot-right" : ""}>
 					<Image 
                         src={props.imgPath}
                         alt={props.imgPath} 
+                        sizes="50vw"
                         fill
                     />
 				</Card>
 			</Face>
 			<Face id="face-5" plain="y-plain">
 				<Card
-					id="card-5"
+					id="card-project"
 					type={onScreen ? "pivot-left" : ""}
-					orientation="column"
 				>
-					<h3>{props.name}</h3>
-					<p>{props.excerpt}</p>
-					<Button><h3>More &rarr;</h3></Button>
+                    <div className={classes.info}>
+                        <div className={classes.title}>{props.name}</div>
+                        <div className={classes.excerpt}>{props.excerpt}</div>
+                    </div>
+					<Button
+                        type="project-item"
+                        color="red"
+                    >
+                        &rarr;
+                    </Button>
 				</Card>
 			</Face>
 		</div>

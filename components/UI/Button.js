@@ -22,7 +22,11 @@ export default function Button(props) {
     }
 
     return (
-        <a onClick={handleOnClick} href={`/${props.push}`} className={`${classes.button} ${classes[props.color]}`}>
+        <a 
+            onClick={handleOnClick} 
+            href={`/${props.push}`} 
+            className={`${classes.button} ${classes[props.type]} ${classes[props.color]}`}
+        >
             {props.children}
         </a>
     );

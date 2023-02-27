@@ -7,3 +7,32 @@
 .revealed {
     opacity: 1;
 }
+
+.info {
+    height: 100%;
+    display: flex;
+    padding: 3.2rem 4.2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+
+    box-sizing: border-box;
+
+    background-color: var(--falu-red);
+}
+
+.title {
+    font-size: 6.8rem;
+    font-weight: 800;
+    line-height: 1.1;
+    
+    color: #fff;
+}
+
+.excerpt {
+    font-size: 3.8rem;
+    font-weight: 66;
+    line-height: 1;
+    
+    color: #fff;
+}

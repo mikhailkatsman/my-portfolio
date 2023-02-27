@@ -112,8 +112,8 @@ module.exports = {
             ],
         },
         {
-            name: "My_Portfolio",
-            slug: "my-portfolio",
+            name: "This_Website",
+            slug: "this-website",
             technologies: [
                 "dart",
                 "flutter",
