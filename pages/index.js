@@ -1,10 +1,11 @@
 import { useState } from "react";
 
+import Image from "next/image";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
 import Button from "@/components/UI/Button";
-import AutoType from "@/components/animation/AutoType";
+
 
 export default function Home() {
 	const [facesState, setFacesState] = useState({
@@ -28,14 +29,19 @@ export default function Home() {
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
 							<Card id="card-1" type="pivot-right">
-								<AutoType>
-									HELLO! This is my portfolio page!
-								</AutoType>
+								<h1 className="index-title">
+                                    /HI!
+                                </h1>
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">
 							<Card id="card-2" type="pivot-left">
-								<h1>MAP</h1>
+								<Image 
+									className="map"
+									src="/map/index-map.webp" 
+									alt="map"
+									fill
+								/>
 							</Card>
 						</Face>
 					</div>

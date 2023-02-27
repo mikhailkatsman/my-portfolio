@@ -15,11 +15,6 @@
     border-radius: 3rem; */
 }
 
-.card img {
-    object-fit: cover;
-    filter: grayscale();
-}
-
 .column {
     flex-direction: column;
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import fs from "fs/promises";
 import path from "path";
 
+import Image from "next/image";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
@@ -56,18 +57,25 @@ export default function Projects(props) {
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
 							<Card id="card-1" type="">
-								<h2>Projects.</h2>
+								<h2 className="projects-title">
+                                    /projects
+                                </h2>
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">
 							<Card id="card-2" type="pivot-left">
-								<h1>MAP</h1>
+                                <Image 
+									className="map"
+									src="/map/projects-map.webp" 
+									alt="map"
+									fill
+								/>
 							</Card>
 						</Face>
 					</div>
 					<Face id="face-3" plain="x-plain">
 						<Card id="card-1" type="float-up">
-							<h3>Scroll down.</h3>
+							<h3>Scroll...</h3>
 						</Card>
 					</Face>
 				</div>

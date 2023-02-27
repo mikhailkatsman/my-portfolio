@@ -11,7 +11,7 @@ html {
 
 :root {
     --falu-red: #721817;
-    --sandy-brown: #fa9f42;
+    --sandy-brown: #B35C05;
     --indigo-dye: #2b4162;
     --dartmouth-green: #0b6e4f;
     --french-gray: #9F9FA8;
@@ -105,7 +105,7 @@ h3 {
     line-height: 1.1;
     
     color: var(--night);
-    text-shadow: -5rem 5rem 4rem #bbb;
+    text-shadow: -5rem 5rem 4rem #94949E;
 }
 
 p {
@@ -116,8 +116,16 @@ p {
     color: var(--night);
 }
 
+.index-title { color: var(--falu-red) }
+.projects-title { color: var(--indigo-dye) }
+.contact-title { color: var(--sandy-brown) }
+
 .arr1 { font-size: 13rem; font-weight: 800; margin-bottom: 2rem; }
 .arr2 { font-size: 11rem; font-weight: 600; margin-bottom: 2rem; }
+
+.map {
+    transform: scale(0.7);
+}
 
 /* PLAINS */
 .x-plain { transform: rotateX(60deg) rotateZ(-45deg) }
