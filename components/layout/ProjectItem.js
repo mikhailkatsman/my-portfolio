@@ -48,7 +48,7 @@ export default function ProjectItem(props) {
 					<Image 
                         src={props.imgPath}
                         alt={props.imgPath} 
-                        sizes="50vw"
+                        sizes="40vw"
                         fill
                     />
 				</Card>

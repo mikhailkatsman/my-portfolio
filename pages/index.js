@@ -31,7 +31,6 @@ export default function Home() {
 								<AutoType>
 									HELLO! This is my portfolio page!
 								</AutoType>
-								{/* <h2>HI! This is my portfolio page.</h2> */}
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">

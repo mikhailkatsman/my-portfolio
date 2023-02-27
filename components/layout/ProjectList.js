@@ -7,7 +7,7 @@ export default function ProjectList(props) {
 		<div>
 			{projects.map((project) => {
 				const img = props.imgs.find(
-					(image) => image.fileName === project.slug + "-1.jpg"
+					(image) => image.fileName === project.slug + "-1.webp"
 				);
 
 				return (
