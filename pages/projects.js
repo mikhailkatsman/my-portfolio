@@ -14,7 +14,7 @@ export async function getStaticProps() {
 	const imgs = imgFileNames.map((fileName) => {
 		return {
 			fileName,
-			filePath: path.join(imgDirPath, fileName),
+			filePath: `/img/${fileName}`,
 		};
 	});
 
