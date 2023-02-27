@@ -64,7 +64,7 @@ export default function ProjectItem(props) {
                     </div>
 					<Button
                         type="project-item"
-                        color="red"
+                        color="black"
                     >
                         &rarr;
                     </Button>

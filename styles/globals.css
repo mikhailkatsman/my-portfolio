@@ -14,7 +14,7 @@ html {
     --sandy-brown: #fa9f42;
     --indigo-dye: #2b4162;
     --dartmouth-green: #0b6e4f;
-    --french-gray: #CACACE;
+    --french-gray: #9F9FA8;
     --pure-white: #ffffff;
     --night: #131315;
 }
@@ -131,7 +131,7 @@ p {
     margin: auto;
     opacity: 1;
 
-    /* box-shadow: 0 0 0 0.5rem lightskyblue; */
+    /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
 }
 
 .stick {
