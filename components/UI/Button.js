@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import classes from "./Button.module.css";
 
@@ -8,8 +7,6 @@ export default function Button(props) {
     function handleOnClick(event) {
         event.preventDefault();
 
-        router.prefetch(`/${props.push}`);
-
         props.setTransition(prev => ({
             ...prev,
             type: 'transition-out',
@@ -17,7 +14,7 @@ export default function Button(props) {
         }));
 
         setTimeout(() => {
-            router.push(`/${props.push}`);
+            router.push('/' + props.push);
         }, 500);
     }
 

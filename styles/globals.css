@@ -120,9 +120,6 @@ p {
 .projects-title { color: var(--indigo-dye) }
 .contact-title { color: var(--sandy-brown) }
 
-.arr1 { font-size: 13rem; font-weight: 800; margin-bottom: 2rem; }
-.arr2 { font-size: 11rem; font-weight: 600; margin-bottom: 2rem; }
-
 .map {
     transform: scale(0.7);
 }

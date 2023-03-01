@@ -12,7 +12,9 @@ export default function ProjectList(props) {
 
 				return (
 					<ProjectItem
+						setFacesState={props.setFacesState}
 						key={project.slug}
+						slug={project.slug}
 						imgPath={img ? img.filePath : ""}
 						name={project.name}
 						excerpt={project.excerpt}

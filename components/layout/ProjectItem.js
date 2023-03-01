@@ -65,6 +65,9 @@ export default function ProjectItem(props) {
 					<Button
                         type="project-item"
                         color="black"
+						push={props.slug} // same as slug
+						setTransition={props.setFacesState}
+						direction="up"
                     >
                         &rarr;
                     </Button>

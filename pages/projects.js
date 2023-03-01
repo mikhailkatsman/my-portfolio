@@ -81,7 +81,10 @@ export default function Projects(props) {
 				</div>
 			</header>
 			<main className={`list-section ${listState}`}>
-				<ProjectList imgs={props.imgs}/>
+				<ProjectList 
+					setFacesState={setFacesState}
+					imgs={props.imgs}
+				/>
 			</main>
 		</>
 	);
