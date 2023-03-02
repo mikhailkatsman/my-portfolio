@@ -29,17 +29,6 @@ export default function Projects(props) {
 		direction: "right",
 		type: "transition-in",
 	});
-	const [listState, setListState] = useState("");
-
-	// useEffect(() => {
-	//     window.addEventListener(
-	//         "scroll",
-	//         () => {
-	//             console.log("scrolling detected");
-	//         },
-	//         { once: true }
-	//     );
-	// }, []);
 
 	return (
 		<>
@@ -80,7 +69,11 @@ export default function Projects(props) {
 					</Face>
 				</div>
 			</header>
-			<main className={`list-section ${listState}`}>
+			<main className={`
+				list-section
+				${facesState.direction} 
+                ${facesState.type}
+			`}>
 				<ProjectList 
 					setFacesState={setFacesState}
 					imgs={props.imgs}

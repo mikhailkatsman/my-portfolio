@@ -134,8 +134,6 @@ p {
 .list-section {
     width: 60rem;
     margin: auto;
-    opacity: 1;
-
     /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
 }
 
@@ -158,9 +156,15 @@ p {
     animation-fill-mode: forwards;
 }
 
-.left {
+.down {
     --x: -95%;
     --y: 50%;
+    transform: translate(var(--x), var(--y));
+}
+
+.up {
+    --x: 95%;
+    --y: -25%;
     transform: translate(var(--x), var(--y));
 }
 

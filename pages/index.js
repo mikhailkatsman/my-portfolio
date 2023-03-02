@@ -52,7 +52,7 @@ export default function Home() {
 								color="blue"
 								push="contact"
 								setTransition={setFacesState}
-								direction="left"
+								direction="down"
 							>
 								<div className="arr1">&larr;</div>Contact.
 							</Button>
