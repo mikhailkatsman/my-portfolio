@@ -21,7 +21,8 @@ export default function Home() {
 			<header>
 				<div
 					className={`
-                        faces 
+                        faces
+						faces--index
                         ${facesState.direction} 
                         ${facesState.type}
                     `}
@@ -29,7 +30,7 @@ export default function Home() {
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
 							<Card id="card-1" type="pivot-right">
-								<h1 className="index-title">
+								<h1>
                                     /HI!
                                 </h1>
 							</Card>

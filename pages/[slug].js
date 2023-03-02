@@ -3,6 +3,7 @@ import { useState } from "react";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
+import Links from '@/components/UI/Links';
 
 import { technologies, projects } from '@/data/projectData';
 
@@ -27,13 +28,15 @@ export default function ProjectPage(props) {
 		type: "transition-in",
 	});
 
-	const { name, technologies, excerpt, description, notes, links } = props.project;
-	const title = 'Mikhail Katsman | ' + name;
+	const projectTitle = 'Mikhail Katsman | ' + props.project.name;
+	const usedTechTags = technologies.filter(
+		(tech) => props.project.technologies.includes(tech.name)
+	);
 
 	return (
 		<>
 			<Head>
-				<title>{title}</title>
+				<title>{projectTitle}</title>
 			</Head>
 			<header>
 				<div
@@ -44,30 +47,22 @@ export default function ProjectPage(props) {
                     `}
 				>
 					<div className="faces-row">
-						<Face id="face-1" plain="y-plain">
-							<Card id="card-1" type="pivot-right">
-								<h2 className="index-title">
-                                    /{name}
-                                </h2>
+						<Face id="face-project-name" plain="y-plain">
+							<Card id="card-name">
+								<h3>{props.project.name}</h3>
 							</Card>
 						</Face>
-						<Face id="face-2" plain="z-plain">
-							<Card orientation="column" id="card-2" type={'pivot-left'}>
-								{technologies.map((tech => 
-									<p key={tech}>
-										{tech}
-									</p>
-								))}
+						<Face id="face-project-technologies" plain="z-plain">
+							<Card orientation="column" id="card-technologies" type={'pivot-left'}>
+								<Links tags={usedTechTags} />
 							</Card>
 						</Face>
 					</div>
-					<Face id="face-3" plain="x-plain">
-						<Card id="card-3" type="float-up" orientation="column">
-							<p>{description}</p>
-						</Card>
-					</Face>
 				</div>
 			</header>
+			<main className={`details-section fade-in`}>
+				<p className="details-text">{props.project.description}</p>
+			</main>
 		</>
 	);
 }

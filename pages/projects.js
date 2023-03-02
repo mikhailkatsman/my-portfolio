@@ -39,14 +39,15 @@ export default function Projects(props) {
 				<div
 					className={`
                         faces
+						faces--index
                         ${facesState.direction} 
                         ${facesState.type}
                     `}
 				>
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
-							<Card id="card-1" type="">
-								<h2 className="projects-title">
+							<Card id="card-1">
+								<h2>
                                     /projects
                                 </h2>
 							</Card>

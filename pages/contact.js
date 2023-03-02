@@ -20,6 +20,7 @@ export default function Contact() {
 				<div
 					className={`
                         faces 
+						faces--index
                         ${pageState.direction} 
                         ${pageState.type}
                     `}

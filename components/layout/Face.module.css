@@ -6,7 +6,7 @@
     /* MAYBE REMOVE */
     justify-content: center;
 
-    box-shadow: 0 0 0 0.5rem red;
+    /* box-shadow: 0 0 0 0.5rem red; */
 }
 
 /* POSITIONS */
@@ -79,6 +79,34 @@
 
     perspective: 750rem;
     perspective-origin: 1000% 1000%;
+}
+
+#face-project-name {
+    align-self: flex-start;
+
+    width: 90rem;
+    height: 12rem;
+
+    margin-top: 6rem;
+    margin-left: -19.2rem;
+    margin-right: -9rem;
+
+    perspective: 300rem;
+    perspective-origin: -260% -300%;
+}
+
+#face-project-technologies {
+    align-self: flex-end;
+
+    width: 50rem;
+    height: 30rem;
+
+    margin-left: -20rem;
+    margin-right: -10.7rem;
+    margin-bottom: 6rem;
+
+    perspective: 800rem;
+    perspective-origin: -1500% 900%;
 }
 
 .plain {

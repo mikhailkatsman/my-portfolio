@@ -115,9 +115,22 @@
 }
 
 #card-img {
-    animation-delay: 0.25s;
+    animation-delay: 0.3s;
     overflow: hidden;
 
     border-radius: 4rem 0 0 4rem;
     background: var(--night);
+}
+
+#card-name {
+    justify-content: flex-start;
+
+    animation-delay: 0s;
+}
+
+#card-technologies {
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+    animation-delay: 0.25s;
 }

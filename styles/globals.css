@@ -49,14 +49,17 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     max-width: 60rem;
-    height: 60rem;
+    height: fit-content;
 
     z-index: 111;
 
     margin: auto;
-    margin-top: calc(50vmax - 50%);
 
     /* box-shadow: 0 0 0 0.5rem lightgreen; */
+}
+
+.faces--index {
+    margin-top: calc(50vmax - 50%);
 }
 
 .faces-row {
@@ -100,6 +103,14 @@ h2 {
 }
 
 h3 {
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1.1;
+    
+    color: var(--night);
+}
+
+h4 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.1;
@@ -116,9 +127,9 @@ p {
     color: var(--night);
 }
 
-.index-title { color: var(--falu-red) }
-.projects-title { color: var(--indigo-dye) }
-.contact-title { color: var(--sandy-brown) }
+.details-text {
+    font-size: 2.2rem;
+}
 
 .map {
     transform: scale(0.7);
@@ -137,11 +148,20 @@ p {
     /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
 }
 
+.details-section {
+    width: 60rem;
+    margin: auto;
+
+    opacity: 0;
+    /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
+}
+
 .stick {
     position: fixed;
     inset: 0 0 auto 0;
 }
 
+/* TRANSITION ANIMATIONS */
 .transition-out {
     animation-name: transition-out;
     animation-duration: 0.5s;
@@ -156,6 +176,15 @@ p {
     animation-fill-mode: forwards;
 }
 
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+/* TRANSITION DIRECTIONS */
 .down {
     --x: -95%;
     --y: 50%;
@@ -164,7 +193,7 @@ p {
 
 .up {
     --x: 95%;
-    --y: -25%;
+    --y: -50%;
     transform: translate(var(--x), var(--y));
 }
 
@@ -194,4 +223,9 @@ p {
         transform: translate(0%, 0%);
         opacity: 1;
     }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
 }
