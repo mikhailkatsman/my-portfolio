@@ -1,0 +1,9 @@
+.link-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    animation-delay: 0.7s;
+    opacity: 0;
+    transform: translateX(-100%);
+}

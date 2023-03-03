@@ -1,10 +1,10 @@
 import Face from "./Face";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
-
 import Image from "next/image";
 
 import classes from "./ProjectItem.module.css";
+
 import { useEffect, useRef, useState } from "react";
 
 export default function ProjectItem(props) {

@@ -23,7 +23,7 @@
 
 .index {
     font-size: 4.2rem;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 0;
     letter-spacing: 0.3rem;
     color: var(--night);
@@ -35,9 +35,12 @@
 
 .project-item {
     margin-left: -1rem;
-    font-size: 12rem;
+    font-weight: 900;
+    font-size: 10rem;
     color: #fff;
     background-color: var(--bg);
+
+    flex: 1;
 
     border-radius: 0 4.5rem 4.5rem 0;
     box-shadow: inset 0 0 0 1.5rem var(--night);

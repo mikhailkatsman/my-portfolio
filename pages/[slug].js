@@ -1,11 +1,13 @@
 import { useState } from "react";
 
+import Image from "next/image";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
-import Links from '@/components/UI/Links';
 
-import { technologies, projects } from '@/data/projectData';
+import { technologies, projects } from "@/data/projectData";
+import HeaderDetails from "@/components/layout/ProjectHeaderDetails";
+import ProjectNameContainer from "@/components/layout/ProjectNameContainer";
 
 export function getStaticPaths() {
 	return {
@@ -17,7 +19,9 @@ export function getStaticPaths() {
 }
 
 export function getStaticProps(context) {
-    const project = projects.find((entry) => entry.slug === context.params.slug);
+	const project = projects.find(
+		(entry) => entry.slug === context.params.slug
+	);
 
 	return { props: { project } };
 }
@@ -28,9 +32,9 @@ export default function ProjectPage(props) {
 		type: "transition-in",
 	});
 
-	const projectTitle = 'Mikhail Katsman | ' + props.project.name;
-	const usedTechTags = technologies.filter(
-		(tech) => props.project.technologies.includes(tech.name)
+	const projectTitle = "Mikhail Katsman | " + props.project.name;
+	const usedTechTags = technologies.filter((tech) =>
+		props.project.technologies.includes(tech.name)
 	);
 
 	return (
@@ -39,29 +43,35 @@ export default function ProjectPage(props) {
 				<title>{projectTitle}</title>
 			</Head>
 			<header>
-				<div
-					className={`
-                        faces 
-                        ${pageState.direction} 
-                        ${pageState.type}
-                    `}
-				>
+				<div className={`faces faces--project`}>
 					<div className="faces-row">
-						<Face id="face-project-name" plain="y-plain">
-							<Card id="card-name">
-								<h3>{props.project.name}</h3>
-							</Card>
-						</Face>
-						<Face id="face-project-technologies" plain="z-plain">
-							<Card orientation="column" id="card-technologies" type={'pivot-left'}>
-								<Links tags={usedTechTags} />
-							</Card>
-						</Face>
+						<ProjectNameContainer
+							direction={pageState.direction} 
+							type={pageState.type}
+						>
+							<Face id="face-project-name" plain="y-plain">
+								<Card id="card-name">
+									<Image
+										src={`/img/${props.project.slug}-1.webp`}
+										alt="project logo"
+										fill
+									/>
+									<h3>{props.project.name}</h3>
+								</Card>
+							</Face>
+						</ProjectNameContainer>
+						<HeaderDetails usedTechTags={usedTechTags} links={props.project.links} />
 					</div>
 				</div>
 			</header>
 			<main className={`details-section fade-in`}>
-				<p className="details-text">{props.project.description}</p>
+				<div>column 1</div>
+				<p
+					className="details-text"
+					dangerouslySetInnerHTML={{
+						__html: props.project.description,
+					}}
+				></p>
 			</main>
 		</>
 	);

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 html {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -60,6 +60,10 @@ body::-webkit-scrollbar {
 
 .faces--index {
     margin-top: calc(50vmax - 50%);
+}
+
+.faces--project {
+    margin-top: 4.8rem;
 }
 
 .faces-row {
@@ -121,14 +125,16 @@ h4 {
 
 p {
     font-size: 3.2rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.1;
     
     color: var(--night);
 }
 
 .details-text {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    max-width: 27ch;
 }
 
 .map {
@@ -149,10 +155,13 @@ p {
 }
 
 .details-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 60rem;
     margin: auto;
 
     opacity: 0;
+    animation-delay: 1s;
     /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
 }
 
@@ -178,10 +187,16 @@ p {
 
 .fade-in {
     animation-name: fade-in;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+}
+
+.swoop-in {
+    animation-name: swoop-in;
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(.26,.72,.28,1);
+    animation-fill-mode: forwards;
 }
 
 /* TRANSITION DIRECTIONS */
@@ -228,4 +243,17 @@ p {
 @keyframes fade-in {
     0% { opacity: 0 }
     100% { opacity: 1 }
+}
+
+@keyframes swoop-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    30% {
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+        transform: translateX(0%); 
+    }
 }

@@ -1,0 +1,38 @@
+.tech-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: fit-content;
+    gap: 1rem;
+
+    padding: 0.8rem 1.4rem;
+    margin: 0 1rem 1rem 0;
+
+    text-decoration: none;
+
+    cursor: pointer;
+    box-sizing: content-box;
+
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 0;
+    color: #fff;
+    background-color: var(--night);
+
+    border-radius: 1.8rem;
+    box-shadow: inset 0 0 0 0.5rem var(--night);
+}
+
+.tech-logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.tech-item:hover {
+    background-color: transparent;
+    color: var(--night);
+}
