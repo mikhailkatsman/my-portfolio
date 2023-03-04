@@ -42,7 +42,8 @@ body::-webkit-scrollbar {
     background-position: center;
     
     height: 100vh;
-    inset: 0;
+    left: 0;
+    right: 0;
 
     z-index: -1;
 }
@@ -50,7 +51,10 @@ body::-webkit-scrollbar {
 .content {
     position: absolute;
 
-    inset: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
 }
 
 .faces {
@@ -81,7 +85,8 @@ body::-webkit-scrollbar {
 
 footer {
     position: fixed;
-    inset: auto 0 0 0;
+    left: 1.6rem;
+    bottom: 0;
 
     height: 3.2rem;
 
