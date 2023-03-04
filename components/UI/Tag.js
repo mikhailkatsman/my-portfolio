@@ -13,6 +13,8 @@ export default function Tag(props) {
 					alt="logo"
 					width={30}
 					height={30}
+					placeholder="blur"
+					blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACXBIWXMAAC4jAAAuIwF4pT92AAAACklEQVQIHWNgAAAAAgABz8g15QAAAABJRU5ErkJggg=="
 				/>
 			</a>
 		</li>

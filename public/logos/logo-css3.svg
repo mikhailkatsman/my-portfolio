@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Logo Css3</title><path d="M64 32l35 403.22L255.77 480 413 435.15 448 32zm290.68 334.9L256.07 395l-98.46-28.24-6.75-77.76h48.26l3.43 39.56 53.59 15.16.13.28 53.47-14.85 5.64-64.15H203l-4-50h120.65l4.35-51H140l-4-49h240.58z" fill="#131315"/></svg>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="1024" height="768">
+
+<g transform="matrix(1.5 0 0 1.5 128.00003 -0)">
+    <path d="M64 32L99 435.22L255.77 480L413 435.15L448 32L64 32zM354.68 366.9L256.07 395L157.61002 366.76L150.86002 289L199.12001 289L202.55 328.56L256.14 343.72L256.27002 344L309.74002 329.15L315.38004 265L203 265L199 215L319.65 215L324 164L140 164L136 115L376.58002 115z" stroke="none" fill="#131315" fill-rule="nonzero" />
+</g>
+</svg>
