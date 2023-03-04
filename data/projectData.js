@@ -119,6 +119,7 @@ export const projects = [
         links: [
             {
                 label: "GitHub",
+                logo: "/logos/logo-github.svg",
                 url: "https://github.com/mikhailkatsman/NOWS_app"
             },
         ]

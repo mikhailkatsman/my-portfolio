@@ -19,10 +19,12 @@ export default function App({ Component, pageProps }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
             <div className="background" />
-			<Component {...pageProps} />
-			<footer>
-				<p>&#169; Mikhail Katsman</p>
-			</footer>
+			<div className="content">
+				<Component {...pageProps} />
+				<footer>
+					<p>&#169; Mikhail Katsman</p>
+				</footer>
+			</div>
 		</>
 	);
 }
