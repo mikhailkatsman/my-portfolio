@@ -2,55 +2,55 @@ export const technologies = [
     {
         name: 'dart',
         label: "Dart",
-        logo: "/public/logos/logo-dart.svg",
+        logo: "/logos/logo-dart.svg",
         url: "https://dart.dev/"
     },
     {
         name: 'flutter',
         label: "Flutter",
-        logo: "/public/logos/logo-flutter.svg",
+        logo: "/logos/logo-flutter.svg",
         url: "https://flutter.dev/"
     },
     {
         name: 'firebase',
         label: "Firebase",
-        logo: "/public/logos/logo-firebase.svg",
+        logo: "/logos/logo-firebase.svg",
         url: "https://firebase.google.com/"
     },
     {
         name: 'html',
         label: "HTML",
-        logo: "/public/logos/logo-html5.svg",
+        logo: "/logos/logo-html5.svg",
         url: "https://www.w3.org/html/"
     },
     {
         name: 'css',
         label: "CSS",
-        logo: "/public/logos/logo-css3.svg",
+        logo: "/logos/logo-css3.svg",
         url: "https://www.w3.org/Style/CSS/"
     },
     {
         name: 'js',
         label: "JavaScript",
-        logo: "/public/logos/logo-javascript.svg",
+        logo: "/logos/logo-javascript.svg",
         url: "https://en.wikipedia.org/wiki/JavaScript"
     },
     {
         name: 'react',
         label: "React",
-        logo: "/public/logos/logo-react.svg",
+        logo: "/logos/logo-react.svg",
         url: "https://reactjs.org/"
     },
     {
         name: 'nextjs',
         label: "Next.js",
-        logo: "/public/logos/logo-nextjs.svg",
+        logo: "/logos/logo-nextjs.svg",
         url: "https://nextjs.org/"
     },
     {
         name: 'nodejs',
         label: "Node.js",
-        logo: "/public/logos/logo-nodejs.svg",
+        logo: "/logos/logo-nodejs.svg",
         url: "https://nodejs.org/"
     },
 ];
@@ -70,12 +70,12 @@ export const projects = [
         links: [
             {
                 label: "YouTube",
-                logo: "/public/logos/logo-youtube.svg",
+                logo: "/logos/logo-youtube.svg",
                 url: "https://www.youtube.com/watch?v=P8iCu2nqF2k"
             },
             {
                 label: "GitHub",
-                logo: "/public/logos/logo-github.svg",
+                logo: "/logos/logo-github.svg",
                 url: "https://github.com/mikhailkatsman/NOWS_app"
             },
         ]
@@ -95,10 +95,12 @@ export const projects = [
         links: [
             {
                 label: "Website",
-                url: "future link"
+                logo: "/logos/logo-tk-portfolio.svg",
+                url: "https://tk-portfolio.netlify.app/"
             },
             {
                 label: "GitHub",
+                logo: "/logos/logo-github.svg",
                 url: "https://github.com/mikhailkatsman/NOWS_app"
             },
         ]
