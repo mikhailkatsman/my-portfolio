@@ -54,12 +54,7 @@ export default function Projects(props) {
 						</Face>
 						<Face id="face-2" plain="z-plain">
 							<Card id="card-2" type="pivot-left">
-                                <Image 
-									className="map"
-									src="/map/projects-map.webp" 
-									alt="map"
-									fill
-								/>
+                                <h1>HI!</h1>
 							</Card>
 						</Face>
 					</div>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import Image from "next/image";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
@@ -30,19 +29,15 @@ export default function Home() {
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
 							<Card id="card-1" type="pivot-right">
-								<h1>
-                                    /HI!
-                                </h1>
+								<h4>
+									Lorem ipsum dolor sit amet, 
+									consectetur adipiscing elit. 
+                                </h4>
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">
 							<Card id="card-2" type="pivot-left">
-								<Image 
-									className="map"
-									src="/map/index-map.webp" 
-									alt="map"
-									fill
-								/>
+								<h1>HI!</h1>
 							</Card>
 						</Face>
 					</div>

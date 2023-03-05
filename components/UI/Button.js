@@ -22,7 +22,7 @@ export default function Button(props) {
         <a 
             onClick={handleOnClick} 
             href={`/${props.push}`} 
-            className={`${classes.button} ${classes[props.type]}`}
+            className={`${classes.button} ${classes[props.type]} ${classes[props.direction]}`}
         >
             {props.children}
         </a>

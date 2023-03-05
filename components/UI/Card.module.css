@@ -93,6 +93,7 @@
 
 #card-1 {
     animation-delay: 0s;
+    justify-content: right;
 }
 
 #card-2 {
@@ -101,26 +102,29 @@
 
 #card-index-to-projects {
     animation-delay: 0.5s;
+    overflow: visible;
 }
 
 #card-index-to-about {
     animation-delay: 0.35s;
+    overflow: visible;
 }
 
 #card-index-to-contact {
+    display: inline-block;
+
     animation-delay: 0.2s;
+    overflow: visible;
 }
 
 #card-project {
     animation-delay: 0s;
-    overflow: hidden;
 
     border-radius: 0 4rem 4rem 0;
 }
 
 #card-img {
     animation-delay: 0.3s;
-    overflow: hidden;
 
     border-radius: 4rem 0 0 4rem;
     background: var(--night);
