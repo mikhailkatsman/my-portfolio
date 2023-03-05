@@ -64,13 +64,10 @@ export default function ProjectItem(props) {
                     </div>
 					<Button
                         type="project-item"
-                        color="black"
-						push={props.slug} // same as slug
+						push={props.slug}
 						setTransition={props.setFacesState}
 						direction="up"
-                    >
-                        &rarr;
-                    </Button>
+                    />
 				</Card>
 			</Face>
 		</div>

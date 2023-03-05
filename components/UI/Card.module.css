@@ -101,25 +101,31 @@
 }
 
 #card-index-to-projects {
+    height: 50%;
+    padding-top: 0.8rem;
+
     animation-delay: 0.5s;
     overflow: visible;
 }
 
 #card-index-to-about {
-    animation-delay: 0.35s;
-    overflow: visible;
-}
-
-#card-index-to-contact {
-    display: inline-block;
+    height: 50%;
+    padding-bottom: 0.8rem;
 
     animation-delay: 0.2s;
     overflow: visible;
 }
 
+#card-index-to-contact {
+    width: 27%;
+    margin-right: 1.6rem;
+
+    animation-delay: 0.35s;
+    overflow: visible;
+}
+
 #card-project {
     animation-delay: 0s;
-
     border-radius: 0 4rem 4rem 0;
 }
 

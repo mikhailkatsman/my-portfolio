@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import Image from "next/image";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
@@ -48,30 +49,26 @@ export default function Home() {
 								push="contact"
 								setTransition={setFacesState}
 								direction="down"
-							>
-								CONTACT
-							</Button>
+							/>
 						</Card>
-						<Card id="card-index-to-about" type="float-up">
-							<Button
-								type="index"
-								push="about"
-								setTransition={setFacesState}
-								direction="left"
-							>
-								ABOUT
-							</Button>
-						</Card>
-						<Card id="card-index-to-projects" type="float-up">
-							<Button
-								type="index"
-								push="projects"
-								setTransition={setFacesState}
-								direction="right"
-							>
-								PROJECTS
-							</Button>
-						</Card>
+						<div className="index-link-container--col">
+							<Card id="card-index-to-about" type="float-up">
+								<Button
+									type="index"
+									push="about"
+									setTransition={setFacesState}
+									direction="left"
+								/>
+							</Card>
+							<Card id="card-index-to-projects" type="float-up">
+								<Button
+									type="index"
+									push="projects"
+									setTransition={setFacesState}
+									direction="right"
+								/>
+							</Card>
+						</div>
 					</Face>
 				</div>
 			</header>

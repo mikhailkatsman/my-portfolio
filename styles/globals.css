@@ -150,10 +150,6 @@ p {
     max-width: 27ch;
 }
 
-.map {
-    transform: scale(0.7);
-}
-
 /* PLAINS */
 .x-plain { transform: rotateX(60deg) rotateZ(-45deg) }
 
@@ -161,15 +157,12 @@ p {
 
 .z-plain { transform: rotateX(16.8deg) rotateY(60deg) }
 
-.index-link-container {
-    flex: 1;
-}
-
 .index-link-container--col {
-    display: flex;
-    flex-direction: column;
+    overflow: visible;
+    width: 70%;
 
-    flex: 2;
+    perspective: inherit;
+    perspective-origin: inherit;
 }
 
 .list-section {
@@ -232,6 +225,12 @@ p {
 
 .up {
     --x: 95%;
+    --y: -50%;
+    transform: translate(var(--x), var(--y));
+}
+
+.left {
+    --x: -95%;
     --y: -50%;
     transform: translate(var(--x), var(--y));
 }

@@ -6,7 +6,7 @@ import Card from "@/components/UI/Card";
 
 export default function Contact() {
 	const [pageState, setPageState] = useState({
-		direction: "down",
+		direction: "left",
 		type: "transition-in",
 	});
 
@@ -27,7 +27,7 @@ export default function Contact() {
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
 							<Card id="card-1" type="">
-								<h2 className="contact-title">/Contact</h2>
+								<h2 className="contact-title">/About</h2>
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">
