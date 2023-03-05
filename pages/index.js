@@ -47,27 +47,34 @@ export default function Home() {
 						</Face>
 					</div>
 					<Face id="face-3" plain="x-plain">
-						<Card id="card-3" type="float-up" orientation="column">
+						<Card id="card-index-to-contact" type="float-up">
 							<Button
 								type="index"
-								color="blue"
 								push="contact"
 								setTransition={setFacesState}
 								direction="down"
 							>
-								<div className="arr1">&larr;</div>Contact.
+								CONTACT
 							</Button>
 						</Card>
-						<div style={{ height: "2.8rem" }} />
-						<Card id="card-4" type="float-up" orientation="column">
+						<Card id="card-index-to-about" type="float-up">
 							<Button
 								type="index"
-								color="yellow"
+								push="about"
+								setTransition={setFacesState}
+								direction="left"
+							>
+								ABOUT
+							</Button>
+						</Card>
+						<Card id="card-index-to-projects" type="float-up">
+							<Button
+								type="index"
 								push="projects"
 								setTransition={setFacesState}
 								direction="right"
 							>
-								<div className="arr2">&darr;</div>Projects.
+								PROJECTS
 							</Button>
 						</Card>
 					</Face>

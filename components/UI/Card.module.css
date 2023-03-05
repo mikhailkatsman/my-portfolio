@@ -7,12 +7,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    overflow: hidden;
    
     box-sizing: border-box;
 
-    /* TEMP */
-    /* box-shadow: inset 0 0 0 1rem #fff;
-    border-radius: 3rem; */
+    /* box-shadow: inset 0 0 0 1rem #09b0bc; */
 }
 
 .column {
@@ -48,7 +48,7 @@
 
     opacity: 0;
 
-    animation-name: float;
+    animation-name: float-up;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
@@ -70,7 +70,7 @@
     }
 }
 
-@keyframes float {
+@keyframes float-up {
     0% {
         transform: translateZ(-50rem);
     }
@@ -99,11 +99,15 @@
     animation-delay: 0.3s;
 }
 
-#card-3 {
+#card-index-to-projects {
     animation-delay: 0.5s;
 }
 
-#card-4 {
+#card-index-to-about {
+    animation-delay: 0.35s;
+}
+
+#card-index-to-contact {
     animation-delay: 0.2s;
 }
 

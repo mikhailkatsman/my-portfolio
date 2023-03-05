@@ -4,7 +4,7 @@ export default function Card(props) {
     return (
         <div
             id={classes[props.id]}
-            className={`${classes.card} ${classes[props.type]} ${classes[props.orientation]}`}
+            className={`${classes.card} ${classes[props.type]}`}
         >
             {props.children}
         </div>
