@@ -10,6 +10,9 @@ import { useEffect, useRef, useState } from "react";
 export default function ProjectItem(props) {
 	const item = useRef(null);
 	const [onScreen, setOnScreen] = useState(false);
+	const [currentZIndex, setCurrentZIndex] = useState(props.zIndex);
+
+	function handleAnimationEnd() { setCurrentZIndex('999') }
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -37,6 +40,8 @@ export default function ProjectItem(props) {
 	return (
 		<div
 			ref={item}
+			style={{ zIndex: `${currentZIndex}` }}
+			onAnimationEnd={handleAnimationEnd}
 			className={`
                 faces-row 
                 ${classes["project-item"]}

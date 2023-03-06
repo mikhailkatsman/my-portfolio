@@ -89,7 +89,7 @@ export const projects = [
             "js",
             "nodejs",
         ],
-        excerpt: "A static website portfolio that I've created for my wife who is a professional photographer.",
+        excerpt: "A static website portfolio that I've created for my wife who is a professional fashion photographer.",
         description: "The aim of the NOWS application is to host and display a realtime database of postcards or 'Nowcards', published by the users of the application. These Nowcards appear on the interactive map of the application as a set of clickable location markers. Each Nowcard has a timer, and a dedicated 'attend' button, that keeps track of how many other users have decided to 'attend' the event. After a certain period of time has passed, the Nowcard gets deleted from the database. Each time the Nowcard 'attend' button is clicked by viewers in the area, this timer is postponed.",
         notes: "A complete list of packages and dependencies can be found in Github repository's README.md file.",
         links: [
