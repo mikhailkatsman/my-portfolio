@@ -51,12 +51,9 @@ export default function ProjectPage(props) {
 						>
 							<Face id="face-project-name" plain="y-plain">
 								<Card id="card-name">
-									{/* <Image
-										src={`/img/${props.project.slug}-1.webp`}
-										alt="project logo"
-										fill
-									/> */}
-									<h3>{props.project.name}</h3>
+									<h1 className="project-title-text">
+										{props.project.name}
+									</h1>
 								</Card>
 							</Face>
 						</ProjectNameContainer>

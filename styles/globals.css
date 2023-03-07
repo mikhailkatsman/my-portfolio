@@ -167,6 +167,13 @@ p {
     font-style: italic;
 }
 
+.project-title-text {
+    font-size: 9rem;
+    font-weight: 800; 
+
+    margin-left: 4rem;
+}
+
 .page-description--top-text {
     font-size: 7rem;
     font-weight: 500;
