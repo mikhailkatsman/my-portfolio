@@ -32,7 +32,7 @@ export default function Contact() {
 									Get in touch.
                                 </h4>
 								<h4 className="page-description--bottom-text">
-									Here are some links:
+									Here are some links.
                                 </h4>
 							</Card>
 						</Face>

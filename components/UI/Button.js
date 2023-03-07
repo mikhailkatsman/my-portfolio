@@ -6,23 +6,25 @@ import classes from "./Button.module.css";
 export default function Button(props) {
     const router = useRouter();
 
+    const redirect = setRedirect(props.push);
+    function setRedirect(address) {
+        switch (address) {
+            case 'email':
+                return 'mailto:katsmanmikhail@gmail.com';
+            case 'linkedin':
+                return 'https://www.linkedin.com/in/mikhail-katsman-ba64a7123/';
+            case 'discord':
+                return 'https://www.discordapp.com/users/717023680223510609/';
+            default:
+                return `/${props.push}`;
+        }
+    }
+
     function handleOnClick(event) {
         event.preventDefault();
 
         if (props.type === 'contact') {
-            switch (props.push) {
-                case 'email':
-                    
-                    break;
-                case 'linkedin':                    
-                    router.push('https://www.linkedin.com/in/mikhail-katsman-ba64a7123/');
-                    break;
-                case 'discord':
-                    router.push('https://www.discordapp.com/users/717023680223510609/');
-                    break;        
-                default:
-                    break;
-            }
+            window.open(redirect, '_ blank');
             return;
         }
 
@@ -33,63 +35,47 @@ export default function Button(props) {
         }));
 
         setTimeout(() => {
-            router.push('/' + props.push);
+            router.push(redirect);
         }, 500);
     }
 
     let children = (
-        <Image 
-            className={classes.arrow} 
-            src={`/nav/arrow-${props.direction}.svg`}
-            alt="nav"
-            width={30}
-            height={30}
-        />
+        <>  { props.type ==='contact' ?
+                <h4 className={classes['button-text']}>{props.push}</h4>
+            : props.push === 'about' || props.type !== 'index' ? 
+                null
+            :   <h4 className={classes['button-text']}>{props.push}</h4> }
+            <Image 
+                className={
+                    props.type === 'contact' ? classes[`contact-logo`]
+                    : classes.arrow
+                } 
+                src={
+                    props.type === 'contact' ? `/contact/${props.push}.svg`
+                    : `/nav/arrow-${props.direction}.svg`
+                }
+                alt={props.push}
+                width={30}
+                height={30}
+            />
+            {props.push === 'about' ? 
+                <h4 className={classes['button-text']}>{props.push}</h4>
+            : null }
+        </>
     );
 
-    if (props.push === 'about') {
-        children = (
-            <>
-                <Image 
-                    className={classes.arrow} 
-                    src={`/nav/arrow-${props.direction}.svg`}
-                    alt="nav"
-                    width={30}
-                    height={30}
-                />
-                <h4 className={classes['button-text']}>{props.push}</h4>
-            </>
-        );
-    }
-
-    if (props.push === 'projects' || props.push === 'contact' || props.type === 'contact') {
-        children = (
-            <>
-                <h4 className={classes['button-text']}>{props.push}</h4>
-                <Image 
-                    className={
-                        props.type === 'contact' ? classes[`contact-logo`]
-                        : classes.arrow
-                    } 
-                    src={
-                        props.type === 'contact' ? `/contact/${props.push}.svg`
-                        : `/nav/arrow-${props.direction}.svg`
-                    }
-                    alt={props.push}
-                    width={30}
-                    height={30}
-                />
-            </>
-        );
-    }
-
-    return (
-        <a 
-            onClick={handleOnClick} 
-            href={`/${props.push}`} 
-            className={`${classes.button} ${classes[props.type]} ${classes[props.direction]}`}
+    let link = (
+        <a
+        href={redirect}
+        rel={props.type === 'contact' ? 'noopener noreferrer' : null}
+        className={`${classes.button} ${classes[props.type]} ${classes[props.direction]}`}
+        onClick={handleOnClick} 
         >
             {children}
         </a>
+    );
+
+    return (
+        link
     );
 }
