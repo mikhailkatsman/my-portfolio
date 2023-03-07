@@ -33,8 +33,8 @@
     background-color: var(--night);
     flex-direction: column;
 
-    border-radius: 4.5rem;
-    box-shadow: inset 0 0 0 1rem var(--night);
+    border-radius: 3.5rem;
+    box-shadow: inset 0 0 0 0.5rem var(--night);
 
     transition-property: background-color, translate();
     transition-duration: 0.2s;
@@ -43,7 +43,7 @@
 .index-text {
     font-size: 4rem;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.3rem;
     color: #fff;
 

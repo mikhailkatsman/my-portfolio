@@ -26,7 +26,7 @@ export default function Contact() {
 				>
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
-							<Card id="card-1" type="">
+							<Card id="card-page-title" type="">
 								<h2 className="contact-title">/Contact</h2>
 							</Card>
 						</Face>

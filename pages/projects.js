@@ -46,14 +46,14 @@ export default function Projects(props) {
 				>
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
-							<Card id="card-1">
+							<Card id="card-page-title">
 								<h2>
                                     /projects
                                 </h2>
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">
-							<Card id="card-2" type="pivot-left">
+							<Card id="card-page-title" type="pivot-left">
                                 <h1>HI!</h1>
 							</Card>
 						</Face>

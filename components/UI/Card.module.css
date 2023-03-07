@@ -6,7 +6,6 @@
 
     justify-content: center;
     align-items: center;
-    text-align: center;
 
     overflow: hidden;
    
@@ -91,20 +90,29 @@
 
 /* TIMINGS */
 
-#card-1 {
-    animation-delay: 0s;
-    justify-content: right;
+#card-description {
+    flex-direction: column;
+    align-items: flex-start;
+
+    animation-delay: 0.4s;
 }
 
-#card-2 {
+#card-page-title {
     animation-delay: 0.3s;
+}
+
+#card-greeting {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    animation-delay: 0s;
 }
 
 #card-index-to-projects {
     height: 50%;
     padding-top: 0.8rem;
 
-    animation-delay: 0.5s;
+    animation-delay: 0.9s;
     overflow: visible;
 }
 
@@ -112,7 +120,7 @@
     height: 50%;
     padding-bottom: 0.8rem;
 
-    animation-delay: 0.2s;
+    animation-delay: 0.5s;
     overflow: visible;
 }
 
@@ -120,7 +128,7 @@
     width: 27%;
     margin-right: 1.6rem;
 
-    animation-delay: 0.35s;
+    animation-delay: 0.7s;
     overflow: visible;
 }
 
