@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import Image from "next/image";
 
@@ -6,10 +6,12 @@ import classes from './EmailLink.module.css';
 
 export default function EmailLink() {
     const emailRef = useRef(null);
+    const [copyState, setCopyState] = useState(false);
 
     function copyToClipboard() {
-		navigator.clipboard.writeText(emailRef.current.innerText);
-	}
+        navigator.clipboard.writeText(emailRef.current.innerText);
+        setCopyState(true);
+    }
 
     return (
         <>
@@ -19,7 +21,8 @@ export default function EmailLink() {
                 onClick={copyToClipboard}
             >
                 mkatdev@outlook.com
-                <br></br><Image 
+                <br></br>
+                <Image 
                     className={classes['email-copy']}
                     src="/contact/copy.svg"
                     alt="copy email"
@@ -27,6 +30,15 @@ export default function EmailLink() {
                     height={50}
                 />
             </p>
+            <span
+                className={`
+                    ${classes['copy-message']}
+                    ${copyState && classes['fade-in-out']}
+                `}
+                onAnimationEnd={() => setCopyState(false)}
+            >
+                Copied to clipboard!
+            </span>
         </>
     );
 }
