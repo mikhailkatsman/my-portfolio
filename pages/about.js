@@ -31,8 +31,8 @@ export default function Contact() {
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">
-							<Card id="card-2" type="pivot-left">
-								<h1>HI!</h1>
+							<Card id="card-page-title" type="pivot-left">
+								<h1 className="page-title-text">about</h1>
 							</Card>
 						</Face>
 					</div>

@@ -1,104 +1,148 @@
 .button {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    text-decoration: none;
+	text-decoration: none;
 
-    cursor: pointer;
-    box-sizing: border-box;
+	cursor: pointer;
+	box-sizing: border-box;
 }
 
 .project-item {
-    margin-left: -1rem;
-    background-color: var(--night);
+	margin-left: -1rem;
+	background-color: var(--night);
 
-    flex: 1;
+	flex: 1;
 
-    border-radius: 0 4.5rem 4.5rem 0;
-    box-shadow: inset 0 0 0 0.75rem var(--night);
+	border-radius: 0 4.5rem 4.5rem 0;
+	box-shadow: inset 0 0 0 0.75rem var(--night);
 
-    transition-property: background-color;
-    transition-duration: 0.2s;
+	transition-property: background-color;
+	transition-duration: 0.2s;
 }
 
 .project-item:hover {
-    background-color: transparent;
+	background-color: transparent;
 }
 
-.index {
-    background-color: var(--night);
-    flex-direction: column;
+.index,
+.contact {
+	background-color: var(--night);
+	flex-direction: column;
 
-    border-radius: 3.5rem;
-    box-shadow: inset 0 0 0 0.5rem var(--night);
+	border-radius: 3.5rem;
+	box-shadow: inset 0 0 0 0.5rem var(--night);
 
-    transition-property: background-color, translate();
-    transition-duration: 0.2s;
+	transition-property: background-color, translate();
+	transition-duration: 0.2s;
 }
 
-.index-text {
-    font-size: 4rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    letter-spacing: 0.3rem;
-    color: #fff;
-
-    transition-property: all;
-    transition-duration: 0.2s;
+.contact {
+	padding: 0 4rem;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.right > h4 { margin-top: 2rem }
-.left > h4 { margin-bottom: 2rem }
-.down > h4 { margin-right: 2rem }
+.button-text {
+	font-size: 4rem;
+	font-weight: 500;
+	text-transform: capitalize;
+	letter-spacing: 0.2rem;
+	color: var(--pure-white);
+
+	transition-property: all;
+	transition-duration: 0.2s;
+}
+
+.right > h4 {
+	margin-top: 2rem;
+}
+.left > h4 {
+	margin-bottom: 2rem;
+}
+.down > h4 {
+	margin-right: 2rem;
+}
+
+.arrow,
+.contact-logo {
+	filter: invert(1);
+
+	transition-property: filter, scale();
+	transition-duration: 0.2s;
+}
 
 .arrow {
     height: 6rem;
-    width: 6rem;
-
-    filter: invert(1);
-
-    transition-property: filter, scale();
-    transition-duration: 0.2s;
+	width: 6rem;
+}
+.contact-logo {
+    height: 4rem;
+	width: 4rem;
+}
+.project-item .arrow {
+	height: 8rem;
+	width: 8rem;
 }
 
-.project-item .arrow { height: 8rem; width: 8rem }
-
-.down { 
-    writing-mode: vertical-rl;
+.down {
+	writing-mode: vertical-rl;
 }
 
-.index:hover {
-    background-color: transparent;
-}
-.index:hover .index-text {
-    color: var(--night);
+.project-item:hover,
+.index:hover,
+.contact:hover {
+	background-color: transparent;
 }
 
-.right:hover { transform: translateY(10%) }
-.left:hover { transform: translateY(-10%) }
-.down:hover { transform: translateX(-13%) }
+.contact:hover .button-text,
+.index:hover .button-text {
+	color: var(--night);
+}
 
-.right:hover .index-text { transform: translateY(45%) }
-.left:hover .index-text { transform: translateY(-45%) }
-.down:hover .index-text { transform: translateX(-45%) }
+.right:hover {
+	transform: translateY(10%);
+}
+.left:hover {
+	transform: translateY(-10%);
+}
+.down:hover {
+	transform: translateX(-13%);
+}
+.contact:hover {
+    transform: translateX(10%);
+}
+
+.right:hover .button-text {
+	transform: translateY(45%);
+}
+.left:hover .button-text {
+	transform: translateY(-45%);
+}
+.down:hover .button-text {
+	transform: translateX(-45%);
+}
 
 .right:hover .arrow {
-    transform: translateY(150%) scale(1.5);
-    filter: none;
+	transform: translateY(150%) scale(1.5);
+	filter: none;
 }
 .left:hover .arrow {
-    transform: translateY(-150%) scale(1.5);
-    filter: none;
+	transform: translateY(-150%) scale(1.5);
+	filter: none;
 }
 .down:hover .arrow {
-    transform: translateX(-170%) scale(1.5);
-    filter: none;
+	transform: translateX(-170%) scale(1.5);
+	filter: none;
 }
 .project-item:hover .arrow {
-    transform: translateX(20%) scale(1.5);
+	transform: translateX(20%) scale(1.5);
+	filter: none;
+}
+.contact:hover .contact-logo {
     filter: none;
 }

@@ -101,13 +101,13 @@ export const projects = [
             {
                 label: "GitHub",
                 logo: "/logos/logo-github.svg",
-                url: "https://github.com/mikhailkatsman/NOWS_app"
+                url: "https://github.com/mikhailkatsman/TK_portfolio"
             },
         ]
     },
     {
-        name: "This_Website",
-        slug: "this-website",
+        name: "My_Portfolio",
+        slug: "my-portfolio",
         technologies: [
             "js",
             "react",
@@ -120,7 +120,7 @@ export const projects = [
             {
                 label: "GitHub",
                 logo: "/logos/logo-github.svg",
-                url: "https://github.com/mikhailkatsman/NOWS_app"
+                url: "https://github.com/mikhailkatsman/my-portfolio"
             },
         ]
     },

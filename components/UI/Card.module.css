@@ -91,16 +91,27 @@
 #card-index-to-about {
     height: 50%;
     padding-bottom: 0.8rem;
-    animation-delay: 0.7s;
+    animation-delay: 0.8s;
     overflow: visible;
 }
 
 #card-index-to-contact {
     width: 27%;
     margin-right: 1.6rem;
-    animation-delay: 0.9s;
+    animation-delay: 0.95s;
     overflow: visible;
 }
+
+#card-contact--email,
+#card-contact--linkedin,
+#card-contact--discord {
+    height: 33.3%;
+    padding: 0.8rem 0;
+    overflow: visible;
+}
+#card-contact--email { animation-delay: 0s }
+#card-contact--linkedin { animation-delay: 0.15s }
+#card-contact--discord { animation-delay: 0.3s }
 
 #card-project {
     border-radius: 0 4rem 4rem 0;
