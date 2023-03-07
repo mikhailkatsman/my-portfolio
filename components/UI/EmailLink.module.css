@@ -1,0 +1,31 @@
+.email-text {
+    font-size: 5.8rem;
+    font-weight: 500;
+
+    margin-left: 8rem;
+    margin-bottom: 0rem;
+
+    text-decoration: underline;
+    text-decoration-color: transparent;
+
+    transition-property: text-decoration-color;
+	transition-duration: 0.2s;
+}
+
+.email-copy {
+    width: 6rem;
+    height: 6rem;
+
+    opacity: 0;
+    transition-property: opacity;
+	transition-duration: 0.2s;
+}
+
+.email-text:hover {
+    cursor: pointer;
+    text-decoration-color: var(--night);
+}
+
+.email-text:hover .email-copy {
+    opacity: 1;
+}

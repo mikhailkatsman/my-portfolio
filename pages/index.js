@@ -32,9 +32,9 @@ export default function Home() {
 								<h4 className="page-description--top-text">
 									Thanks for visiting my portfolio page.
                                 </h4>
-								<h4 className="page-description--bottom-text">
+								<p className="page-description--bottom-text">
 									Browse around!
-                                </h4>
+                                </p>
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">

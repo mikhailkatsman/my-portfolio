@@ -47,11 +47,11 @@ export default function Projects(props) {
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
 							<Card id="card-description">
-								<h4 className="page-description--top-text">
+								<p className="page-description--top-text">
 									Have a look<br></br>at some 
 									<span style={{fontStyle:"italic"}}> stuff</span>
 									<br></br>I&apos;ve made.
-                                </h4>
+                                </p>
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">

@@ -211,14 +211,14 @@ p {
 .y-plain { transform: rotateX(-16.8deg) rotateY(60deg) }
 .z-plain { transform: rotateX(16.8deg) rotateY(60deg) }
 
-
-.index-link-container--col {
+.index-link-container--col,
+.contact-link-container--col {
     overflow: visible;
-    width: 70%;
-
     perspective: inherit;
     perspective-origin: inherit;
 }
+.index-link-container--col { width: 70% }
+.contact-link-container--col { width: 80% }
 
 .list-section {
     width: 60rem;

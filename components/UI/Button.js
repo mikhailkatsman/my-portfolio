@@ -10,7 +10,7 @@ export default function Button(props) {
     function setRedirect(address) {
         switch (address) {
             case 'email':
-                return 'mailto:katsmanmikhail@gmail.com';
+                return 'mailto:mkatdev@outlook.com';
             case 'linkedin':
                 return 'https://www.linkedin.com/in/mikhail-katsman-ba64a7123/';
             case 'discord':
