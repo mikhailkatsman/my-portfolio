@@ -85,20 +85,20 @@
     height: 50%;
     padding-top: 0.8rem;
     overflow: visible;
-    animation-delay: 1.1s;
+    animation-delay: 0.7s;
 }
 
 #card-index-to-about {
     height: 50%;
     padding-bottom: 0.8rem;
-    animation-delay: 0.8s;
+    animation-delay: 0.4s;
     overflow: visible;
 }
 
 #card-index-to-contact {
     width: 27%;
     margin-right: 1.6rem;
-    animation-delay: 0.95s;
+    animation-delay: 0.55s;
     overflow: visible;
 }
 
@@ -109,9 +109,9 @@
     padding: 0.8rem 0;
     overflow: visible;
 }
-#card-contact--email { animation-delay: 0s }
-#card-contact--linkedin { animation-delay: 0.15s }
-#card-contact--discord { animation-delay: 0.3s }
+#card-contact--email { animation-delay: 0.3s }
+#card-contact--linkedin { animation-delay: 0.45s }
+#card-contact--discord { animation-delay: 0.6s }
 
 #card-project {
     border-radius: 0 4rem 4rem 0;
