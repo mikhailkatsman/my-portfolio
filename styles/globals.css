@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
 
 html {
     font-family: 'Roboto', sans-serif;
@@ -13,10 +13,6 @@ html {
 }
 
 :root {
-    --falu-red: #721817;
-    --sandy-brown: #B35C05;
-    --indigo-dye: #2b4162;
-    --dartmouth-green: #0b6e4f;
     --french-gray: #9F9FA8;
     --pure-white: #ffffff;
     --night: #131315;
@@ -161,7 +157,17 @@ p {
     max-width: 27ch;
 }
 
-.index-top-text {
+.page-title-text {
+    font-size: 9rem;
+    font-weight: 800;
+}
+.page-title-text::before {
+    content: "/";
+    font-weight: 100;
+    font-style: italic;
+}
+
+.page-description--top-text {
     font-size: 7rem;
     font-weight: 500;
     line-height: 0.9;
@@ -171,7 +177,7 @@ p {
     margin-bottom: 3rem;
 }
 
-.index-bottom-text {
+.page-description--bottom-text {
     font-size: 5.2rem;
     font-style: italic;
     line-height: 1.2;
@@ -196,10 +202,9 @@ p {
 
 /* PLAINS */
 .x-plain { transform: rotateX(60deg) rotateZ(-45deg) }
-
 .y-plain { transform: rotateX(-16.8deg) rotateY(60deg) }
-
 .z-plain { transform: rotateX(16.8deg) rotateY(60deg) }
+
 
 .index-link-container--col {
     overflow: visible;
@@ -313,12 +318,8 @@ p {
 }
 
 @keyframes swoop-in {
-    0% {
-        transform: translateX(-100%);
-    }
-    30% {
-        opacity: 0;
-    }
+    0% { transform: translateX(-100%) }
+    30% { opacity: 0 }
     100% { 
         opacity: 1;
         transform: translateX(0%); 

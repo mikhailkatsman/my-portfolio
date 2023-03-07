@@ -38,7 +38,7 @@
     perspective-origin: -1500% 900%;
 }
 
-#face-3 {
+#face-index-buttons {
     align-self: center;
     flex-direction: row;
 
@@ -49,8 +49,21 @@
 
     z-index: 0;
 
-    perspective: 800rem;
-    perspective-origin: -300% 700%;
+    perspective: 500rem;
+    perspective-origin: -100% 250%;
+}
+
+#face-project-arrow {
+    align-self: center;
+    align-items: center;
+
+    width: 20rem;
+    height: 20rem;
+
+    margin-top: -10rem;
+    margin-bottom: 10rem;
+
+    z-index: 0;
 }
 
 #face-4 {
@@ -59,7 +72,7 @@
     width: 50rem;
     height: 40rem;
 
-    margin-top: -5.6rem;
+    margin-top: -5.0rem;
     margin-left: -10.9rem;
     margin-right: -22.1rem;
 
@@ -73,7 +86,7 @@
     width: 90rem;
     height: 40rem;
 
-    margin-top: -9.9rem;
+    margin-top: -9.35rem;
     margin-bottom: 9.4rem;
     margin-left: -8.1rem;
     margin-right: -19.5rem;

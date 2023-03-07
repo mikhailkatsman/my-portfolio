@@ -29,11 +29,11 @@ export default function Home() {
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
 							<Card id="card-description" type="pivot-right">
-								<h4 className="index-top-text">
+								<h4 className="page-description--top-text">
 									Thanks for visiting my portfolio page.
                                 </h4>
-								<h4 className="index-bottom-text">
-									Have a look around!
+								<h4 className="page-description--bottom-text">
+									Browse around!
                                 </h4>
 							</Card>
 						</Face>
@@ -44,7 +44,7 @@ export default function Home() {
 							</Card>
 						</Face>
 					</div>
-					<Face id="face-3" plain="x-plain">
+					<Face id="face-index-buttons" plain="x-plain">
 						<Card id="card-index-to-contact" type="float-up">
 							<Button
 								type="index"

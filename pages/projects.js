@@ -2,11 +2,11 @@ import { useState } from "react";
 import fs from "fs/promises";
 import path from "path";
 
-import Image from "next/image";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
 import ProjectList from "@/components/layout/ProjectList";
+import Arrow from "@/components/UI/Arrow";
 
 export async function getStaticProps() {
 	const imgDirPath = path.join(process.cwd(), "public", "img");
@@ -46,22 +46,22 @@ export default function Projects(props) {
 				>
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
-							<Card id="card-page-title">
-								<h2>
-                                    /projects
-                                </h2>
+							<Card id="card-description">
+								<h4 className="page-description--top-text">
+									Have a look<br></br>at some 
+									<span style={{fontStyle:"italic"}}> stuff</span>
+									<br></br>I&apos;ve made.
+                                </h4>
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">
 							<Card id="card-page-title" type="pivot-left">
-                                <h1>HI!</h1>
+								<h1 className="page-title-text">projects</h1>
 							</Card>
 						</Face>
 					</div>
-					<Face id="face-3" plain="x-plain">
-						<Card id="card-1" type="float-up">
-							<h3>Scroll...</h3>
-						</Card>
+					<Face id="face-project-arrow" plain="y-plain">
+						<Arrow />
 					</Face>
 				</div>
 			</header>
