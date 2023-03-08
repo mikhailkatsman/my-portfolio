@@ -106,8 +106,8 @@
 #card-contact--email,
 #card-contact--linkedin,
 #card-contact--discord {
-    height: 33.3%;
-    padding: 0.8rem 0;
+    height: 29.8%;
+    margin-bottom: 1.6rem;
     overflow: visible;
 }
 #card-contact--email { animation-delay: 0.3s }

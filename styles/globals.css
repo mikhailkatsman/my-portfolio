@@ -2,6 +2,7 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    font-size: 100%;
 
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
@@ -19,8 +20,6 @@ html {
 }
 
 body {
-    font-size: 62.5%;
-
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; 
     overflow-y: scroll;
@@ -46,11 +45,7 @@ body::-webkit-scrollbar {
 
 .content {
     position: absolute;
-
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 100%;
+    inset: 0;
 
     z-index: 1;
 }
@@ -59,17 +54,13 @@ body::-webkit-scrollbar {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 60rem;
-    height: fit-content;
 
-    z-index: 111;
-
-    margin: auto;
-
-    /* box-shadow: 0 0 0 0.5rem lightgreen; */
+    box-shadow: 0 0 0 0.5rem lightgreen;
 }
 
 .faces--index {
+    width: 60rem;
+    margin: auto;
     margin-top: calc(50vmax - 50%);
 }
 
@@ -84,7 +75,7 @@ body::-webkit-scrollbar {
 .list-section {
     width: 60rem;
     margin: auto;
-    /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
+    box-shadow: 0 0 0 0.5rem #c900e3;
 }
 
 footer {
