@@ -33,6 +33,11 @@
     opacity: 0;
 }
 
+.email-text,
+.copy-message {
+    color: var(--night);
+}
+
 .fade-in-out {
     animation: fade-in-out;
     animation-duration: 2s;

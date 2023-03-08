@@ -81,14 +81,10 @@ body::-webkit-scrollbar {
     display: flex;
 }
 
-header { 
-    position: relative;
-    z-index: 0 
-}
-
-main{
-    position: relative; 
-    z-index: 1 
+.list-section {
+    width: 60rem;
+    margin: auto;
+    /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
 }
 
 footer {
@@ -104,50 +100,19 @@ footer {
 
 footer > p {
     font-size: 1rem;
-
-    color: var(--night);
-
     margin: 0;
     margin-top: 0.8rem;
 }
 
-/* TEXT */
-h1 {
-    font-size: 16rem;
-    font-weight: 800;
-
-    color: var(--night);
-}
-
-h2 {
-    font-size: 11rem;
-    font-weight: 700;
-    line-height: 1.1;
-    
-    color: var(--night);
-}
-
-h3 {
-    font-size: 8rem;
-    font-weight: 800;
-    line-height: 1.1;
-    
-    color: var(--night);
-}
-
-h4 {
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.1;
-    
-    color: var(--night);
-}
-
-p {
-    font-size: 3.2rem;
-    font-weight: 400;
-    line-height: 1.1;
-    
+.details-text,
+.page-title-text,
+.page-title-text::before,
+.project-title-text,
+.page-description--top-text,
+.page-description--bottom-text,
+.greeting-large-text,
+.greeting-small-text,
+footer > p {
     color: var(--night);
 }
 
@@ -195,6 +160,8 @@ p {
 }
 
 .greeting-large-text {
+    font-size: 16rem;
+    font-weight: 800;
     line-height: 0.9;
     margin-left: 8rem;
 }
@@ -219,12 +186,6 @@ p {
 }
 .index-link-container--col { width: 70% }
 .contact-link-container--col { width: 80% }
-
-.list-section {
-    width: 60rem;
-    margin: auto;
-    /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
-}
 
 .details-section {
     display: grid;
@@ -264,6 +225,13 @@ p {
     animation-fill-mode: forwards;
 }
 
+.fade-out {
+    animation-name: fade-out;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
 .swoop-in {
     animation-name: swoop-in;
     animation-duration: 0.6s;
@@ -278,7 +246,13 @@ p {
     transform: translate(var(--x), var(--y));
 }
 
-.up {
+.up--project-item {
+    --x: 95%;
+    --y: -71%;
+    transform: translate(var(--x), var(--y));
+}
+
+.up--project-title {
     --x: 95%;
     --y: -50%;
     transform: translate(var(--x), var(--y));
@@ -321,6 +295,11 @@ p {
 @keyframes fade-in {
     0% { opacity: 0 }
     100% { opacity: 1 }
+}
+
+@keyframes fade-out {
+    0% { opacity: 1 }
+    100% { opacity: 0 }
 }
 
 @keyframes swoop-in {

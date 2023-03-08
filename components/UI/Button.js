@@ -28,11 +28,19 @@ export default function Button(props) {
             return;
         }
 
-        props.setTransition(prev => ({
-            ...prev,
-            type: 'transition-out',
-            direction: props.direction,
-        }));
+        if (props.type === 'project-item') {
+            props.setFacesTransition({
+                type: 'fade-out',
+                direction: null,
+            });
+            props.setProjectItemTransition();
+        } else {
+            props.setFacesTransition(prev => ({
+                ...prev,
+                type: 'transition-out',
+                direction: props.direction,
+            }));
+        }
 
         setTimeout(() => {
             router.push(redirect);

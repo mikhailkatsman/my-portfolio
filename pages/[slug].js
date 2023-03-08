@@ -28,7 +28,7 @@ export function getStaticProps(context) {
 
 export default function ProjectPage(props) {
 	const [pageState, setPageState] = useState({
-		direction: "up",
+		direction: "up--project-title",
 		type: "transition-in",
 	});
 

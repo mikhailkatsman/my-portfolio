@@ -11,6 +11,14 @@ export default function ProjectItem(props) {
 	const item = useRef(null);
 	const [onScreen, setOnScreen] = useState(false);
 	const [currentZIndex, setCurrentZIndex] = useState(props.zIndex);
+	const [itemState, setItemState] = useState('');
+
+	function handleTransition() {
+		setItemState({
+			direction: "up--project-item",
+			type: "transition-out",
+		});
+	}
 
 	function handleAnimationEnd() { setCurrentZIndex('999') }
 
@@ -43,7 +51,9 @@ export default function ProjectItem(props) {
 			style={{ zIndex: `${currentZIndex}` }}
 			onAnimationEnd={handleAnimationEnd}
 			className={`
-                faces-row 
+                faces-row
+				${itemState.direction} 
+                ${itemState.type}
                 ${classes["project-item"]}
                 ${onScreen ? classes.revealed : ""}
             `}
@@ -70,7 +80,8 @@ export default function ProjectItem(props) {
 					<Button
                         type="project-item"
 						push={props.slug}
-						setTransition={props.setFacesState}
+						setFacesTransition={props.setFacesTransition}
+						setProjectItemTransition={handleTransition}
 						direction="up"
                     />
 				</Card>

@@ -71,7 +71,7 @@ export default function Projects(props) {
                 ${facesState.type}
 			`}>
 				<ProjectList 
-					setFacesState={setFacesState}
+					setFacesTransition={setFacesState}
 					imgs={props.imgs}
 				/>
 			</main>

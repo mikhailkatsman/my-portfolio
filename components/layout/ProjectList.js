@@ -4,7 +4,7 @@ import { projects } from "@/data/projectData";
 
 export default function ProjectList(props) {
 	return (
-		<div>
+		<>
 			{projects.map((project, index) => {
 				const img = props.imgs.find(
 					(image) => image.fileName === project.slug + "-1.webp"
@@ -13,7 +13,7 @@ export default function ProjectList(props) {
 				return (
 					<ProjectItem
 						zIndex={projects.length - index}
-						setFacesState={props.setFacesState}
+						setFacesTransition={props.setFacesTransition}
 						key={project.slug}
 						slug={project.slug}
 						imgPath={img ? img.filePath : ""}
@@ -22,6 +22,6 @@ export default function ProjectList(props) {
 					/>
 				);
 			})}
-		</div>
+		</>
 	);
 }

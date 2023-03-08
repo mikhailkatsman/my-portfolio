@@ -49,7 +49,7 @@ export default function Home() {
 							<Button
 								type="index"
 								push="contact"
-								setTransition={setFacesState}
+								setFacesTransition={setFacesState}
 								direction="down"
 							/>
 						</Card>
@@ -58,7 +58,7 @@ export default function Home() {
 								<Button
 									type="index"
 									push="about"
-									setTransition={setFacesState}
+									setFacesTransition={setFacesState}
 									direction="left"
 								/>
 							</Card>
@@ -66,7 +66,7 @@ export default function Home() {
 								<Button
 									type="index"
 									push="projects"
-									setTransition={setFacesState}
+									setFacesTransition={setFacesState}
 									direction="right"
 								/>
 							</Card>
