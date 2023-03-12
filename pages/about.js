@@ -1,14 +1,12 @@
-import { useState } from "react";
-
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
 
 export default function Contact() {
-	const [pageState, setPageState] = useState({
+	const pageAnim = {
 		direction: "left",
 		type: "transition-in",
-	});
+	};
 
 	return (
 		<>
@@ -20,8 +18,8 @@ export default function Contact() {
 					className={`
                         faces 
 						faces--index
-                        ${pageState.direction} 
-                        ${pageState.type}
+                        ${pageAnim.direction} 
+                        ${pageAnim.type}
                     `}
 				>
 					<div className="faces-row">

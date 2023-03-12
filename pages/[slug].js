@@ -1,6 +1,4 @@
-import { useState } from "react";
 
-import Image from "next/image";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
@@ -27,10 +25,10 @@ export function getStaticProps(context) {
 }
 
 export default function ProjectPage(props) {
-	const [pageState, setPageState] = useState({
+	const pageAnim = {
 		direction: "up--project-title",
 		type: "transition-in",
-	});
+	};
 
 	const projectTitle = "Mikhail Katsman | " + props.project.name;
 	const usedTechTags = technologies.filter((tech) =>
@@ -46,8 +44,8 @@ export default function ProjectPage(props) {
 				<div className={`faces faces--project`}>
 					<div className="faces-row">
 						<ProjectNameContainer
-							direction={pageState.direction} 
-							type={pageState.type}
+							direction={pageAnim.direction} 
+							type={pageAnim.type}
 						>
 							<Face id="face-project-name" plain="y-plain">
 								<Card id="card-name">
@@ -62,13 +60,12 @@ export default function ProjectPage(props) {
 				</div>
 			</header>
 			<main className={`details-section fade-in`}>
-				<div>column 1</div>
 				<p
 					className="details-text"
 					dangerouslySetInnerHTML={{
 						__html: props.project.description,
 					}}
-				></p>
+				/>
 			</main>
 		</>
 	);

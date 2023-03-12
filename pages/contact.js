@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-import Image from "next/image";
 import Head from "next/head";
 import Button from "@/components/UI/Button";
 import Face from "@/components/layout/Face";
@@ -8,10 +5,10 @@ import Card from "@/components/UI/Card";
 import EmailLink from "@/components/UI/EmailLink";
 
 export default function Contact() {
-	const [pageState, setPageState] = useState({
-		direction: "down",
+	const pageAnim = {
+		direction: "left",
 		type: "transition-in",
-	});
+	};
 
 	return (
 		<>
@@ -23,8 +20,8 @@ export default function Contact() {
 					className={`
                         faces 
 						faces--index
-                        ${pageState.direction} 
-                        ${pageState.type}
+                        ${pageAnim.direction} 
+                        ${pageAnim.type}
                     `}
 				>
 					<div className="faces-row">

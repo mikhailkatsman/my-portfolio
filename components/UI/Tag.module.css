@@ -13,8 +13,8 @@
     cursor: pointer;
     box-sizing: content-box;
 
-    transition-property: background-color, color;
-    transition-duration: 0.3s;
+    transition-property: background-color, color, translateY();
+    transition-duration: 0.2s;
 
     font-size: 1.8rem;
     font-weight: 400;
@@ -40,6 +40,7 @@
 .tag:hover {
     background-color: transparent;
     color: var(--night);
+    transform: translateY(-10%);
 }
 
 .tag:hover .logo {
