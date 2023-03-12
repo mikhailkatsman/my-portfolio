@@ -66,7 +66,6 @@ export const projects = [
         ],
         excerpt: "NOWS app is an Android application that allows users to view and publish location based events.",
         description: "NOWS app is essentially a social network consisting of pins (or posts) with geolocation metadata which are displayed within a certain radius of each user. The user can view and 'attend' the post, therefore giving it more exposure and allowing it be visible for longer.<br></br>I have used Firebase Authentication services for user sessions. Realtime Database stores text/location/image data of each post. Non-authorised users can only view recent posts, but would not be able to create any.<br></br>Flutter is cross-platform, therefore porting the app to iOS is achievable with a few small changes. For proof-of-concept I have opted to develop and test on Android platform.<br></br>A complete list of packages and dependencies can be found in GitHub repository's README.md file.",
-        notes: "A complete list of packages and dependencies can be found in GitHub repository's README.md file.",
         links: [
             {
                 label: "YouTube",
@@ -91,7 +90,6 @@ export const projects = [
         ],
         excerpt: "A static website portfolio that I've created for my wife who is a professional fashion photographer.",
         description: "This static website uses basic web-development tools and a custom node.js page generator to produce a photography portfolio with gallery view for each portfolio entry. Website is fully responsive to mobile/desktop and gallery view is 'swipeable'.<br></br>The challenge of creating this website was in making a responsive 'masonry' grid of exactly 3 columns, which has to display both .jpg and .mp4 content, adjust gaps and widths of elements accordingly, and retain original aspect ratios.<br></br>Additionaly, I have written a small static page generator that allows me to add/remove image and video files to/from directory and auto-generate all the grid elements and their respective galleries.",
-        notes: "A complete list of packages and dependencies can be found in Github repository's README.md file.",
         links: [
             {
                 label: "Website",
@@ -115,7 +113,6 @@ export const projects = [
         ],
         excerpt: "The website you're viewing now. Made using modern JavaScript tools like React and Next.js",
         description: "For the purposes of achieving the 'orthographic' look of the website I had to employ a set of CSS tranform properties, and apply perspertive depth to immitate 'z-axis' in button and page transition animations. The result is a modular 3D object, of which each visible 'face' can be treated as a normal 2D container.<br></br>React useState hook has alowed me to specify the pan directions for transition animations depending on the chosen navigation option (like x-axis down for /contact page and right for /projects page).<br></br>Additionaly, i have utilised Next.js getStaticPaths/getStaticProps to pregenerate templates for project pages (like the one you're viewing now), which allows me to add project material to website's directory without modyfing any JSX components.",
-        notes: "A complete list of packages and dependencies can be found in Github repository's README.md file.",
         links: [
             {
                 label: "GitHub",
