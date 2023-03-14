@@ -6,7 +6,7 @@ import EmailLink from "@/components/UI/EmailLink";
 
 export default function Contact() {
 	const pageAnim = {
-		direction: "left",
+		direction: "down",
 		type: "transition-in",
 	};
 
