@@ -1,0 +1,22 @@
+
+@media (max-width: 67em) and (min-height: 67em) { html { font-size: 90% } }
+@media (max-width: 61.25em) and (min-height: 61.25em) { html { font-size: 80% } }
+@media (max-width: 53.2em) and (min-height: 53.2em) { html { font-size: 70% } }
+@media (max-width: 46.25em) and (min-height: 46.25em) { html { font-size: 60% } }
+@media (max-width: 39.4em) and (min-height: 39.4em) { html { font-size: 55% } }
+@media (max-width: 36.25em) and (min-height: 36.25em) { html { font-size: 50% } }
+@media (max-width: 33.15em) and (min-height: 33.15em) { html { font-size: 45% } }
+@media (max-width: 30em) and (min-height: 30em) { html { font-size: 40% } }
+@media (max-width: 26.25em) and (min-height: 26.25em) { html { font-size: 35% } }
+@media (max-width: 22.5em) and (min-height: 22.5em) { html { font-size: 30% } }
+
+@media (max-height: 63em) and (min-width: 63em) { html { font-size: 90% } }
+@media (max-height: 58.75em) and (min-width: 58.75em) { html { font-size: 80% } }
+@media (max-height: 51em) and (min-width: 51em) { html { font-size: 70% } }
+@media (max-height: 44.75em) and (min-width: 44.75em) { html { font-size: 60% } }
+@media (max-height: 38.5em) and (min-width: 38.5em) { html { font-size: 55% } }
+@media (max-height: 34.5em) and (min-width: 34.5em) { html { font-size: 50% } }
+@media (max-height: 31.25em) and (min-width: 31.25em) { html { font-size: 45% } }
+@media (max-height: 28.25em) and (min-width: 28.25em) { html { font-size: 40% } }
+@media (max-height: 25em) and (min-width: 25em) { html { font-size: 35% } }
+@media (max-height: 22.25em) and (min-width: 22.25em) { html { font-size: 30% } }

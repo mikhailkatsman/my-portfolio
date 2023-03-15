@@ -126,10 +126,10 @@
 	transform: translateX(-13%);
 }
 .contact:hover {
-    transform: translateX(5%);
+    transform: translateY(-8%) translateX(2%);
 }
 .about:hover {
-    transform: translateY(5%);
+    transform: translateY(-3%) translateX(3%);
 }
 
 .right:hover .button-text {
