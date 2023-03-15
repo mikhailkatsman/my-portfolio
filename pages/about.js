@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
+import Button from "@/components/UI/Button";
 
 export default function Contact() {
 	const pageAnim = {
@@ -11,7 +12,7 @@ export default function Contact() {
 	return (
 		<>
 			<Head>
-				<title>Mikhail Katsman | Contact</title>
+				<title>Mikhail Katsman | About</title>
 			</Head>
 			<header>
 				<div
@@ -24,8 +25,12 @@ export default function Contact() {
 				>
 					<div className="faces-row">
 						<Face id="face-1" plain="y-plain">
-							<Card id="card-page-title" type="">
-								<h2 className="contact-title">/About</h2>
+							<Card id="card-description">
+								<p className="page-description--top-text">
+									Have a look<br></br>at some 
+									<span style={{fontStyle:"italic"}}> stuff</span>
+									<br></br>I&apos;ve made.
+                                </p>
 							</Card>
 						</Face>
 						<Face id="face-2" plain="z-plain">
@@ -34,6 +39,20 @@ export default function Contact() {
 							</Card>
 						</Face>
 					</div>
+					<Face id="face-index-buttons" plain="x-plain">
+						<Card id="card-cv" type="float-up">
+							<Button
+								type="about"
+								push="CV"
+							/>
+						</Card>
+						<Card id="card-cert" type="float-up">
+							<Button
+								type="about"
+								push="Certificates"
+							/>
+						</Card>
+					</Face>
 				</div>
 			</header>
 		</>

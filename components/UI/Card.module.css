@@ -73,7 +73,7 @@
 }
 
 #card-page-title {
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 
 #card-greeting {
@@ -86,20 +86,20 @@
     height: 50%;
     padding-top: 0.8rem;
     overflow: visible;
-    animation-delay: 0.7s;
+    animation-delay: 0.3s;
 }
 
 #card-index-to-about {
     height: 50%;
     padding-bottom: 0.8rem;
-    animation-delay: 0.4s;
+    animation-delay: 0s;
     overflow: visible;
 }
 
 #card-index-to-contact {
     width: 27%;
     margin-right: 1.6rem;
-    animation-delay: 0.55s;
+    animation-delay: 0.15s;
     overflow: visible;
 }
 
@@ -110,9 +110,20 @@
     margin-bottom: 1.6rem;
     overflow: visible;
 }
-#card-contact--email { animation-delay: 0.3s }
-#card-contact--linkedin { animation-delay: 0.45s }
-#card-contact--discord { animation-delay: 0.6s }
+#card-contact--email { animation-delay: 0s }
+#card-contact--linkedin { animation-delay: 0.15s }
+#card-contact--discord { animation-delay: 0.3s }
+
+#card-cv {
+    margin-right: 0.8rem;
+    width: 50%;
+    overflow: visible;
+}
+#card-cert {
+    margin-left: 0.8rem;
+    width: 50%;
+    overflow: visible;
+}
 
 #card-project {
     border-radius: 0 4rem 4rem 0;

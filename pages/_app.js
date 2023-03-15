@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import "@/styles/queries.css";
+import "@/styles/queries.scss";
 
 import Head from "next/head";
 

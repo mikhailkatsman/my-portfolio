@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { saveAs } from 'file-saver';
 
 import Image from "next/image";
 import classes from "./Button.module.css";
@@ -20,26 +21,32 @@ export default function Button(props) {
         }
     }
 
-    function handleOnClick(event) {
+    async function handleOnClick(event) {
         event.preventDefault();
 
-        if (props.type === 'contact') {
-            window.open(redirect, '_ blank');
-            return;
-        }
-
-        if (props.type === 'project-item') {
-            props.setFacesTransition({
-                type: 'fade-out',
-                direction: null,
-            });
-            props.setProjectItemTransition();
-        } else {
-            props.setFacesTransition(prev => ({
-                ...prev,
-                type: 'transition-out',
-                direction: props.direction,
-            }));
+        switch (props.type) {
+            case 'about':
+                const docRes = await fetch(`/docs/Mikhail_Katsman_${props.push}.pdf`);
+                const docBlob = await docRes.blob();
+                saveAs(docBlob,`Mikhail_Katsman_${props.push}.pdf`);
+                return;
+            case 'contact':
+                window.open(redirect, '_ blank');
+                return;
+            case 'project-item':
+                props.setFacesTransition({
+                    type: 'fade-out',
+                    direction: null,
+                });
+                props.setProjectItemTransition();
+                break;
+            default:
+                props.setFacesTransition(prev => ({
+                    ...prev,
+                    type: 'transition-out',
+                    direction: props.direction,
+                }));
+                break;
         }
 
         setTimeout(() => {
@@ -48,7 +55,7 @@ export default function Button(props) {
     }
 
     let children = (
-        <>  { props.type ==='contact' ?
+        <>  { props.type ==='contact'|| props.type === 'about'?
                 <h4 className={classes['button-text']}>{props.push}</h4>
             : props.push === 'about' || props.type !== 'index' ? 
                 null
@@ -56,10 +63,12 @@ export default function Button(props) {
             <Image 
                 className={
                     props.type === 'contact' ? classes[`contact-logo`]
+                    : props.type === 'about' ? classes[`about-logo`]
                     : classes.arrow
                 } 
                 src={
                     props.type === 'contact' ? `/contact/${props.push}.svg`
+                    : props.type === 'about' ? `/about/${props.push}.svg`
                     : `/nav/arrow-${props.direction}.svg`
                 }
                 alt={props.push}
