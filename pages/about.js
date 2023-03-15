@@ -39,7 +39,7 @@ export default function Contact() {
 							</Card>
 						</Face>
 					</div>
-					<Face id="face-index-buttons" plain="x-plain">
+					<Face id="face-about-buttons" plain="x-plain">
 						<Card id="card-cv" type="float-up">
 							<Button
 								type="about"
@@ -49,7 +49,7 @@ export default function Contact() {
 						<Card id="card-cert" type="float-up">
 							<Button
 								type="about"
-								push="Certificates"
+								push="Courses"
 							/>
 						</Card>
 					</Face>
