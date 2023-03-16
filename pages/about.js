@@ -27,9 +27,7 @@ export default function Contact() {
 						<Face id="face-1" plain="y-plain">
 							<Card id="card-description">
 								<p className="page-description--top-text">
-									Have a look<br></br>at some 
-									<span style={{fontStyle:"italic"}}> stuff</span>
-									<br></br>I&apos;ve made.
+									I&apos;m a web developer
                                 </p>
 							</Card>
 						</Face>
