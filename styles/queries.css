@@ -22,7 +22,10 @@
     }
 }
 @media (max-width: 580px) and (min-height: 530px) { html { font-size: 50% } }
-@media (max-width: 530px) and (min-height: 480px) { html { font-size: 45% } }
+@media (max-width: 530px) and (min-height: 480px) { 
+    html { font-size: 45% } 
+    .details-text { font-size: 2.8rem } 
+}
 @media (max-width: 480px) and (min-height: 420px) { html { font-size: 40% } }
 @media (max-width: 420px) and (min-height: 360px) { html { font-size: 35% } }
 @media (max-width: 360px) and (min-height: 300px) { html { font-size: 30% } }
