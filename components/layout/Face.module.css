@@ -113,14 +113,19 @@
 }
 
 #face-project-name {
-    align-self: flex-start;
+    align-self: center;
+    justify-self: center;
     
     height: 25rem;
-
-    margin-left: -14.5rem;
-    margin-right: -14.5rem;
+    margin: auto -14.5rem;
 }
 
-.plain {
-    transform: translate(0,0,0);
+/* QUERIES */
+/* QUERIES */
+@media (max-width: 851px) and (min-height: 740px) {
+    #face-project-name { margin: 20% -14.5rem } 
+}
+
+@media (max-width: 630px) and (min-height: 580px) { 
+    #face-project-name { margin: 50% -14.5rem } 
 }
