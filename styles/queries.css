@@ -30,6 +30,8 @@
 @media (max-width: 420px) and (min-height: 360px) { html { font-size: 35% } }
 @media (max-width: 360px) and (min-height: 300px) { html { font-size: 30% } }
 
+
+
 @media (max-height: 1008px) and (min-width: 940px) { html { font-size: 90% } }
 @media (max-height: 940px) and (min-width: 816px) { html { font-size: 80% } }
 @media (max-height: 816px) and (min-width: 716px) { html { font-size: 70% } }

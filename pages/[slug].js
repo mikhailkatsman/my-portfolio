@@ -1,4 +1,5 @@
 
+import { useEffect } from "react";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
@@ -34,6 +35,10 @@ export default function ProjectPage(props) {
 	const usedTechTags = technologies.filter((tech) =>
 		props.project.technologies.includes(tech.name)
 	);
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<>
