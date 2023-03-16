@@ -4,12 +4,22 @@
     html { font-size: 70% } 
     .details-text { font-size: 2.2rem }
     .faces.faces--project { margin-bottom: 5rem }
+    .up--project-title {
+        --x: 95%;
+        --y: -35%;
+        transform: translate(var(--x), var(--y));
+    }
 }
 @media (max-width: 740px) and (min-height: 630px) { html { font-size: 60% } }
 @media (max-width: 630px) and (min-height: 580px) { 
     html { font-size: 55% }
     .details-text { font-size: 2.5rem }
     .faces.faces--project { margin-bottom: 8rem }
+    .up--project-title {
+        --x: 95%;
+        --y: -25%;
+        transform: translate(var(--x), var(--y));
+    }
 }
 @media (max-width: 580px) and (min-height: 530px) { html { font-size: 50% } }
 @media (max-width: 530px) and (min-height: 480px) { html { font-size: 45% } }
