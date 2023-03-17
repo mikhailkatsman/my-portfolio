@@ -64,9 +64,9 @@ export default function ProjectPage(props) {
 					</div>
 				</div>
 			</header>
-			<main className={`details-section fade-in`}>
+			<main className={`description-section fade-in`}>
 				<p
-					className="details-text"
+					className="description-text"
 					dangerouslySetInnerHTML={{
 						__html: props.project.description,
 					}}
