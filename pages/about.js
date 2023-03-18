@@ -27,7 +27,11 @@ export default function Contact() {
 						<Face id="face-1" plain="y-plain">
 							<Card id="card-description">
 								<p className="page-description--top-text">
-									I&apos;m a web developer
+									I tell computers<br></br>
+									what to do.<br></br>
+                                </p>
+								<p className="page-description--bottom-text">
+									Sometimes they listen...
                                 </p>
 							</Card>
 						</Face>
