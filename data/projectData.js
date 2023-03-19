@@ -94,7 +94,7 @@ export const projects = [
             {
                 label: "Website",
                 logo: "/logos/logo-tk-portfolio.svg",
-                url: "https://tk-portfolio.netlify.app/"
+                url: "https://tomilakatsman.com"
             },
             {
                 label: "GitHub",
