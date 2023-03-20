@@ -13,7 +13,7 @@ export default function Button(props) {
             case 'email':
                 return 'mailto:mkatdev@outlook.com';
             case 'linkedin':
-                return 'https://www.linkedin.com/in/mikhail-katsman-ba64a7123/';
+                return 'https://www.linkedin.com/in/mikhail-katsman/';
             case 'discord':
                 return 'https://www.discordapp.com/users/717023680223510609/';
             default:
