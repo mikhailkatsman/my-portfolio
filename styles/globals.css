@@ -86,6 +86,10 @@ body::-webkit-scrollbar {
     /* box-shadow: 0 0 0 0.5rem #c900e3; */
 }
 
+.bottom-spacer {
+    height: 20vh;
+}
+
 footer {
     position: fixed;
     left: 1.6rem;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import fs from "fs/promises";
 import path from "path";
 
+import Back from "@/components/UI/Back";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
@@ -35,6 +36,7 @@ export default function Projects(props) {
 			<Head>
 				<title>Mikhail Katsman | Projects</title>
 			</Head>
+			<Back />
 			<header>
 				<div
 					className={`
@@ -74,6 +76,7 @@ export default function Projects(props) {
 					setFacesTransition={setFacesState}
 					imgs={props.imgs}
 				/>
+				<div className="bottom-spacer"></div>
 			</main>
 		</>
 	);

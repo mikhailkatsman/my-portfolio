@@ -1,0 +1,43 @@
+.button {
+	position: fixed;
+	margin-top: 3rem;
+	left: -2rem;
+
+	width: 9rem;
+	height: 7rem;
+
+	z-index: 9999;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	border: none;
+	background-color: var(--night);
+	cursor: pointer;
+
+	border-radius: 0 2rem 2rem 0;
+	box-shadow: inset 0 0 0 0.3rem var(--night);
+
+	transition-property: background-color, translateX();
+	transition-duration: 0.2s;
+}
+
+.arrow {
+	height: 6rem;
+	width: 6rem;
+
+	filter: invert(1);
+
+	transition-property: filter;
+	transition-duration: 0.2s;
+}
+
+.button:hover {
+	transform: translateX(1rem);
+	background-color: transparent;
+}
+
+.arrow:hover {
+	filter: none;
+}
