@@ -1,3 +1,4 @@
+import Back from "@/components/UI/Back";
 import Head from "next/head";
 import Button from "@/components/UI/Button";
 import Face from "@/components/layout/Face";
@@ -15,6 +16,7 @@ export default function Contact() {
 			<Head>
 				<title>Mikhail Katsman | Contact</title>
 			</Head>
+			<Back />
 			<header>
 				<div
 					className={`

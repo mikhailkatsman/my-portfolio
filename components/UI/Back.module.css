@@ -3,8 +3,8 @@
 	margin-top: 3rem;
 	left: -2rem;
 
-	width: 9rem;
-	height: 7rem;
+	width: 7rem;
+	height: 6rem;
 
 	z-index: 9999;
 
@@ -12,20 +12,33 @@
 	justify-content: flex-end;
 	align-items: center;
 
-	border: none;
 	background-color: var(--night);
 	cursor: pointer;
-
+	
+	border: 0.3rem solid var(--pure-white);
 	border-radius: 0 2rem 2rem 0;
-	box-shadow: inset 0 0 0 0.3rem var(--night);
+	box-shadow: inset 0 0 0 0.2rem var(--night);
+	background-clip: content-box;
 
+	animation-name: appear;
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(.37,.85,.57,1);
+	animation-fill-mode: forwards;
+
+	transform: translateX(-10rem);
 	transition-property: background-color, translateX();
 	transition-duration: 0.2s;
 }
 
+.disappear {
+	transform: translateX(0rem);
+	animation-name: disappear;
+	animation-duration: 0.2s;
+}
+
 .arrow {
-	height: 6rem;
-	width: 6rem;
+	height: 5rem;
+	width: 5rem;
 
 	filter: invert(1);
 
@@ -34,10 +47,30 @@
 }
 
 .button:hover {
-	transform: translateX(1rem);
 	background-color: transparent;
 }
 
 .arrow:hover {
 	filter: none;
+}
+
+@keyframes appear {
+	0% {transform: translateX(-10rem)}
+	100% {transform: translateX(0rem)}
+}
+@keyframes disappear {
+	0% {transform: translateX(0rem)}
+	100% {transform: translateX(-10rem)}
+}
+
+@media (max-width: 740px) and (min-height: 630px) { 
+	.button {
+		width: 9rem;
+		height: 8rem;
+	}
+
+	.arrow {
+		height: 6rem;
+		width: 6rem;
+	}
 }

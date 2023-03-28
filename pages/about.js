@@ -1,3 +1,4 @@
+import Back from "@/components/UI/Back";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
@@ -14,6 +15,7 @@ export default function Contact() {
 			<Head>
 				<title>Mikhail Katsman | About</title>
 			</Head>
+			<Back />
 			<header>
 				<div
 					className={`

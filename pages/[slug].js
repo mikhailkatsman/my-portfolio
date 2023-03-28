@@ -1,5 +1,6 @@
-
 import { useEffect } from "react";
+
+import Back from "@/components/UI/Back";
 import Head from "next/head";
 import Face from "@/components/layout/Face";
 import Card from "@/components/UI/Card";
@@ -45,6 +46,7 @@ export default function ProjectPage(props) {
 			<Head>
 				<title>{projectTitle}</title>
 			</Head>
+			<Back />
 			<header>
 				<div className={`faces faces--project`}>
 					<div className="faces-row">

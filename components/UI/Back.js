@@ -1,17 +1,23 @@
 import { useRouter } from "next/router";
+import { useRef } from "react";
 
 import Image from "next/image";
 import classes from './Back.module.css';
 
 export default function Back() {
     const router = useRouter();
+    const buttonRef = useRef();
 
     function handleClick() {
-        router.back();
+        buttonRef.current.classList.add(classes.disappear);
+        setTimeout(() => {
+            router.back();
+        }, 300);
     }
 
     return (
-        <button 
+        <button
+            ref={buttonRef}
             className={classes.button}
             onClick={handleClick}
         >
