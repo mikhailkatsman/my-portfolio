@@ -12,7 +12,7 @@ export default function Back() {
         buttonRef.current.classList.add(classes.disappear);
         setTimeout(() => {
             router.back();
-        }, 300);
+        }, 200);
     }
 
     return (
