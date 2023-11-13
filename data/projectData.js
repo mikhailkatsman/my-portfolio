@@ -53,9 +53,41 @@ export const technologies = [
         logo: "/logos/logo-nodejs.svg",
         url: "https://nodejs.org/"
     },
+    {
+        name: 'twig',
+        label: "Twig",
+        logo: "/logos/logo-twig.svg",
+        url: "https://twig.symfony.com/"
+    },
+    {
+        name: 'tailwind',
+        label: "Tailwind",
+        logo: "/logos/logo-tailwind.svg",
+        url: "https://tailwindcss.com/"
+    },
+
 ];
 
 export const projects = [
+    {
+        name: "Endource",
+        slug: "endource",
+        technologies: [
+            "html",
+            "twig",
+            "js",
+            "tailwind",
+        ],
+        excerpt: "excert",
+        description: "description",
+        links: [
+            {
+                label: "Endource",
+                logo: "/logos/logo-endource.svg",
+                url: "https://www.endource.com/"
+            }
+        ]
+    },
     {
         name: "NOWS_App",
         slug: "nows-app",

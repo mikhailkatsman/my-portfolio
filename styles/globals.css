@@ -120,10 +120,8 @@ footer > p {
 }
 
 .description-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
-
-    padding: 0 2rem;
 }
 
 .page-title-text {
@@ -192,13 +190,20 @@ footer > p {
 .contact-link-container--col { width: 80% }
 
 .description-section {
-    display: block;
+    display: flex;
+    gap: 50px;
     width: 60rem;
     margin: auto;
+    padding: 0 2rem;
 
     opacity: 0;
     animation-delay: 1s;
     /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
+}
+
+.description-column {
+    position: relative;
+    width: 50%;
 }
 
 /* TRANSITION ANIMATIONS */

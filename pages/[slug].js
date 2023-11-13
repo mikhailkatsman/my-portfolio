@@ -8,6 +8,7 @@ import Card from "@/components/UI/Card";
 import { technologies, projects } from "@/data/projectData";
 import HeaderDetails from "@/components/layout/ProjectHeaderDetails";
 import ProjectNameContainer from "@/components/layout/ProjectNameContainer";
+import ProjectImageDesktop from "@/components/layout/ProjectImageDesktop";
 
 export function getStaticPaths() {
 	return {
@@ -67,12 +68,21 @@ export default function ProjectPage(props) {
 				</div>
 			</header>
 			<main className={`description-section fade-in`}>
-				<p
-					className="description-text"
-					dangerouslySetInnerHTML={{
-						__html: props.project.description,
-					}}
-				/>
+				<div className="description-column">
+					<ProjectImageDesktop src="/projects/endource/1-desktop.webp" />
+					<div style={{height: "50px" }} />
+					<ProjectImageDesktop src="/projects/endource/1-mobile.webp" />
+					<div style={{height: "50px" }} />
+
+				</div>
+				<div className="description-column">
+					<p
+						className="description-text"
+						dangerouslySetInnerHTML={{
+							__html: props.project.description,
+						}}
+					/>
+				</div>
 			</main>
 		</>
 	);
