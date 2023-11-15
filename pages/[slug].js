@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import fs from 'fs';
+import path from "path";
 
 import Back from "@/components/UI/Back";
 import Head from "next/head";
@@ -20,11 +22,16 @@ export function getStaticPaths() {
 }
 
 export function getStaticProps(context) {
-	const project = projects.find(
-		(entry) => entry.slug === context.params.slug
-	);
+	const projectSlug = context.params.slug;
+	const project = projects.find(entry => entry.slug === projectSlug);
+	const projectAssetsPath = path.join(process.cwd(), 'public', 'projects', projectSlug);
+	const fileNames = fs.readdirSync(projectAssetsPath);
+	console.log(JSON.stringify(fileNames, null, 2))
 
-	return { props: { project } };
+	return { props: { 
+		project, 
+		assets: fileNames.map(fileName => `/projects/${projectSlug}/${fileName}`)
+	} };
 }
 
 export default function ProjectPage(props) {
@@ -70,7 +77,7 @@ export default function ProjectPage(props) {
 			<main className={`description fade-in`}>
 				<div className="description-header">
 					<div style={{width:"40rem", marginRight: "10rem", position: "relative"}}>
-						<ProjectImage src="/projects/tk_portfolio/1-desktop.webp" />
+						<ProjectImage src="/projects/tk-portfolio/1-desktop-video.mp4" />
 						<div 
 							style={{
 								zIndex: "9999",
@@ -80,13 +87,15 @@ export default function ProjectPage(props) {
 								bottom: "5%",
 							}}
 						>
-							<ProjectImage src="/projects/tk_portfolio/1-mobile-video.mp4" />
+							<ProjectImage src="/projects/tk-portfolio/1-mobile.webp" />
 						</div>
 					</div>
 				</div>
 				<div className="description-section">
 					<div className="description-column">
-						<ProjectImage src="/projects/endource/1-desktop.webp" />
+						{props.assets.map((filePath, index) => (
+							<ProjectImage key={`asset-${index}`} src={filePath} />
+						))}
 					</div>
 					<div className="description-column">
 						<p

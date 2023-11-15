@@ -192,6 +192,7 @@ footer > p {
 .description {
     width: 60rem;
     margin: auto;
+    margin-bottom: 15rem;
     padding: 0 2rem;
 
     opacity: 0;

@@ -12,7 +12,7 @@ export default function ProjectImage(props) {
                 {video ?
                     <video autoPlay loop muted playsInline
                         style={{ 
-                            borderRadius: type === 'desktop' ? "1%/2%" : "8%/4%",
+                            borderRadius: type === 'desktop' ? "1%/1.5%" : "8%/4%",
                             width: "100%",
                             height: "100%"
                         }}
@@ -21,9 +21,10 @@ export default function ProjectImage(props) {
                     </video>
                 :
                     <Image
-                        style={{ borderRadius: type === 'desktop' ? "1%/2%" : "8%/4%" }}
+                        style={{ borderRadius: type === 'desktop' ? "0.5%/1.5%" : "8%/4%" }}
                         alt="Project Image"
                         src={props.src}
+                        sizes="1080px"
                         fill={true}
                     />
                 }

@@ -23,13 +23,13 @@
 
 .imageContainer-desktop {
     position: absolute;
-    top: 8%;
+    top: 7.8%;
     left: 1.3%;
     right: 1.3%;
-    bottom: 1.65%;
+    bottom: 1.55%;
 }
 
 .imageContainer-mobile {
     position: absolute;    
-    inset: 1.6% 3.7%;
+    inset: 1.75% 3.8%;
 }

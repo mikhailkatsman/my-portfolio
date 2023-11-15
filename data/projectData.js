@@ -86,7 +86,7 @@ export const projects = [
                 logo: "/logos/logo-endource.svg",
                 url: "https://www.endource.com/"
             }
-        ]
+        ],
     },
     {
         name: "NOWS_App",
@@ -120,7 +120,7 @@ export const projects = [
             "css",
             "nodejs",
         ],
-        excerpt: "A static website portfolio that I've created for my wife who is a professional fashion photographer.",
+        excerpt: "A static website portfolio for a professional fashion photographer.",
         description: "This static website uses <i>'basic'</i> web-development tools and a custom <b>node.js</b> page generator to produce a photography portfolio with gallery view for each portfolio entry. Website is fully responsive to mobile/desktop and gallery view is <i>'swipeable'</i>.<br></br>The challenge of creating this website was in making a responsive <i>'masonry'</i> grid of exactly 3 columns, which has to display both <b>.jpg</b> and <b>.mp4</b> content, adjust gaps and widths of elements accordingly, and retain original aspect ratios.<br></br>Additionaly, I have written a small static page generator that allows me to add/remove image and video files to/from directory and auto-generate all the grid elements and their respective galleries.",
         links: [
             {
