@@ -33,3 +33,10 @@ yarn-error.log*
 
 # photoshop
 .psd
+
+# next-video
+/public/videos/*
+!/public/videos/*.json
+!/public/videos/*.js
+!/public/videos/*.ts
+public/_next-video

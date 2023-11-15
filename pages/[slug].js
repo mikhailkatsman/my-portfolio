@@ -8,7 +8,7 @@ import Card from "@/components/UI/Card";
 import { technologies, projects } from "@/data/projectData";
 import HeaderDetails from "@/components/layout/ProjectHeaderDetails";
 import ProjectNameContainer from "@/components/layout/ProjectNameContainer";
-import ProjectImageDesktop from "@/components/layout/ProjectImageDesktop";
+import ProjectImage from "@/components/layout/ProjectImage";
 
 export function getStaticPaths() {
 	return {
@@ -67,21 +67,35 @@ export default function ProjectPage(props) {
 					</div>
 				</div>
 			</header>
-			<main className={`description-section fade-in`}>
-				<div className="description-column">
-					<ProjectImageDesktop src="/projects/endource/1-desktop.webp" />
-					<div style={{height: "50px" }} />
-					<ProjectImageDesktop src="/projects/endource/1-mobile.webp" />
-					<div style={{height: "50px" }} />
-
+			<main className={`description fade-in`}>
+				<div className="description-header">
+					<div style={{width:"40rem", marginRight: "10rem", position: "relative"}}>
+						<ProjectImage src="/projects/tk_portfolio/1-desktop.webp" />
+						<div 
+							style={{
+								zIndex: "9999",
+								position:"absolute",
+								width: "30%",
+								right: "-20%",
+								bottom: "5%",
+							}}
+						>
+							<ProjectImage src="/projects/tk_portfolio/1-mobile-video.mp4" />
+						</div>
+					</div>
 				</div>
-				<div className="description-column">
-					<p
-						className="description-text"
-						dangerouslySetInnerHTML={{
-							__html: props.project.description,
-						}}
-					/>
+				<div className="description-section">
+					<div className="description-column">
+						<ProjectImage src="/projects/endource/1-desktop.webp" />
+					</div>
+					<div className="description-column">
+						<p
+							className="description-text"
+							dangerouslySetInnerHTML={{
+								__html: props.project.description,
+							}}
+						/>
+					</div>
 				</div>
 			</main>
 		</>
