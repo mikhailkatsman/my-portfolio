@@ -78,8 +78,18 @@ export const projects = [
             "js",
             "tailwind",
         ],
+        type: "website",
         excerpt: "excert",
-        description: "description",
+        mainDescription: [
+            "image 1",
+            "image 2",
+            "image 3"
+        ],
+        imageDescription: [
+            "image 1",
+            "image 2",
+            "image 3"
+        ],
         links: [
             {
                 label: "Endource",
@@ -88,29 +98,30 @@ export const projects = [
             }
         ],
     },
-    {
-        name: "NOWS_App",
-        slug: "nows-app",
-        technologies: [
-            "dart",
-            "flutter",
-            "firebase",
-        ],
-        excerpt: "NOWS_app is an Android application that allows users to view and publish location based events.",
-        description: "<b>NOWS_app</b> is essentially a social network consisting of pins (or posts) with geolocation metadata which are displayed within a certain radius of each user. The user can view and <i>'attend'</i> the post, therefore giving it more exposure and allowing it be visible for longer.<br></br>I have used Firebase Authentication services for user sessions. Realtime Database stores text/location/image data of each post. Non-authorised users can only view recent posts, but would not be able to create any.<br></br>Flutter is cross-platform, therefore porting the app to iOS is achievable with a few small changes. For proof-of-concept I have opted to develop and test on Android platform.<br></br>A complete list of packages and dependencies can be found in GitHub repository's <b>README.md</b> file.",
-        links: [
-            {
-                label: "YouTube",
-                logo: "/logos/logo-youtube.svg",
-                url: "https://www.youtube.com/watch?v=P8iCu2nqF2k"
-            },
-            {
-                label: "GitHub",
-                logo: "/logos/logo-github.svg",
-                url: "https://github.com/mikhailkatsman/NOWS_app"
-            },
-        ]
-    },
+    // {
+    //     name: "NOWS_App",
+    //     slug: "nows-app",
+    //     technologies: [
+    //         "dart",
+    //         "flutter",
+    //         "firebase",
+    //     ],
+    //     type: "mobile",
+    //     excerpt: "NOWS_app is an Android application that allows users to view and publish location based events.",
+    //     description: "<b>NOWS_app</b> is essentially a social network consisting of pins (or posts) with geolocation metadata which are displayed within a certain radius of each user. The user can view and <i>'attend'</i> the post, therefore giving it more exposure and allowing it be visible for longer.<br></br>I have used Firebase Authentication services for user sessions. Realtime Database stores text/location/image data of each post. Non-authorised users can only view recent posts, but would not be able to create any.<br></br>Flutter is cross-platform, therefore porting the app to iOS is achievable with a few small changes. For proof-of-concept I have opted to develop and test on Android platform.<br></br>A complete list of packages and dependencies can be found in GitHub repository's <b>README.md</b> file.",
+    //     links: [
+    //         {
+    //             label: "YouTube",
+    //             logo: "/logos/logo-youtube.svg",
+    //             url: "https://www.youtube.com/watch?v=P8iCu2nqF2k"
+    //         },
+    //         {
+    //             label: "GitHub",
+    //             logo: "/logos/logo-github.svg",
+    //             url: "https://github.com/mikhailkatsman/NOWS_app"
+    //         },
+    //     ]
+    // },
     {
         name: "TK_Portfolio",
         slug: "tk-portfolio",
@@ -120,8 +131,18 @@ export const projects = [
             "css",
             "nodejs",
         ],
+        type: "website",
         excerpt: "A static website portfolio for a professional fashion photographer.",
-        description: "This static website uses <i>'basic'</i> web-development tools and a custom <b>node.js</b> page generator to produce a photography portfolio with gallery view for each portfolio entry. Website is fully responsive to mobile/desktop and gallery view is <i>'swipeable'</i>.<br></br>The challenge of creating this website was in making a responsive <i>'masonry'</i> grid of exactly 3 columns, which has to display both <b>.jpg</b> and <b>.mp4</b> content, adjust gaps and widths of elements accordingly, and retain original aspect ratios.<br></br>Additionaly, I have written a small static page generator that allows me to add/remove image and video files to/from directory and auto-generate all the grid elements and their respective galleries.",
+        mainDescription: [
+            "image 1",
+            "image 2",
+            "image 3"
+        ],
+        imageDescription: [
+            "image 1",
+            "image 2",
+            "image 3"
+        ],
         links: [
             {
                 label: "Website",
@@ -135,27 +156,28 @@ export const projects = [
             },
         ]
     },
-    {
-        name: "My_Portfolio",
-        slug: "my-portfolio",
-        technologies: [
-            "js",
-            "react",
-            "nextjs",
-        ],
-        excerpt: "The website you're viewing now. Made using modern JavaScript tools like React and Next.js",
-        description: "For the purposes of achieving the <i>'isometric projection'</i> look of the website I've employed a set of CSS tranform properties, and applied perspertive depth to immitate <i>'z-axis'</i> in button and page transition animations. The result is a modular 3D layout, where each visible <i>'face'</i> can be treated as a normal 2D container.<br></br><b>React useState</b> hook has alowed me to specify the pan directions for transition animations depending on the chosen navigation option (like <i>'x-axis'</i> down for /contact page and right for /projects page).<br></br>Additionaly, i have utilised <b>Next.js getStaticPaths/getStaticProps</b> to pregenerate templates for project pages (like the one you're viewing now), which allows me to add project material to website's directory without modyfing any JSX components.",
-        links: [
-            {
-                label: "GitHub",
-                logo: "/logos/logo-github.svg",
-                url: "https://github.com/mikhailkatsman/my-portfolio"
-            },
-            {
-                label: "CodePen",
-                logo: "/logos/logo-codepen.svg",
-                url: "https://codepen.io/kry3er"
-            },
-        ]
-    },
+    // {
+    //     name: "My_Portfolio",
+    //     slug: "my-portfolio",
+    //     technologies: [
+    //         "js",
+    //         "react",
+    //         "nextjs",
+    //     ],
+    //     type: "website",
+    //     excerpt: "The website you're viewing now. Made using modern JavaScript tools like React and Next.js",
+    //     description: "For the purposes of achieving the <i>'isometric projection'</i> look of the website I've employed a set of CSS tranform properties, and applied perspertive depth to immitate <i>'z-axis'</i> in button and page transition animations. The result is a modular 3D layout, where each visible <i>'face'</i> can be treated as a normal 2D container.<br></br><b>React useState</b> hook has alowed me to specify the pan directions for transition animations depending on the chosen navigation option (like <i>'x-axis'</i> down for /contact page and right for /projects page).<br></br>Additionaly, i have utilised <b>Next.js getStaticPaths/getStaticProps</b> to pregenerate templates for project pages (like the one you're viewing now), which allows me to add project material to website's directory without modyfing any JSX components.",
+    //     links: [
+    //         {
+    //             label: "GitHub",
+    //             logo: "/logos/logo-github.svg",
+    //             url: "https://github.com/mikhailkatsman/my-portfolio"
+    //         },
+    //         {
+    //             label: "CodePen",
+    //             logo: "/logos/logo-codepen.svg",
+    //             url: "https://codepen.io/kry3er"
+    //         },
+    //     ]
+    // },
 ];

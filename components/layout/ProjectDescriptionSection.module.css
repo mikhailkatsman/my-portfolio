@@ -1,0 +1,22 @@
+.content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.desktop-image-container {
+    width: 80%;
+    position: relative;
+}
+
+.mobile-overlay-container {
+    position: absolute;
+    width: 30%;
+    bottom: 5%;
+    z-index: 9999;
+}
+
+.text-container {
+    width: 20%;
+}

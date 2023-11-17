@@ -191,31 +191,11 @@ footer > p {
 
 .description {
     width: 60rem;
-    margin: auto;
-    margin-bottom: 15rem;
+    margin: 8rem auto 20rem;
     padding: 0 2rem;
 
     opacity: 0;
     animation-delay: 1s;
-}
-
-.description-section {
-    display: flex;
-    gap: 50px;
-    /* box-shadow: 0 0 0 0.5rem #0b6e4f; */
-}
-
-.description-header {
-    height: 40rem;
-    margin-bottom: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.description-column {
-    position: relative;
-    width: 50%;
 }
 
 /* TRANSITION ANIMATIONS */

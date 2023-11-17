@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from 'react';
 import fs from 'fs';
 import path from "path";
 
@@ -10,7 +10,7 @@ import Card from "@/components/UI/Card";
 import { technologies, projects } from "@/data/projectData";
 import HeaderDetails from "@/components/layout/ProjectHeaderDetails";
 import ProjectNameContainer from "@/components/layout/ProjectNameContainer";
-import ProjectImage from "@/components/layout/ProjectImage";
+import ProjectDescriptionSection from "@/components/layout/ProjectDescriptionSection";
 
 export function getStaticPaths() {
 	return {
@@ -26,15 +26,26 @@ export function getStaticProps(context) {
 	const project = projects.find(entry => entry.slug === projectSlug);
 	const projectAssetsPath = path.join(process.cwd(), 'public', 'projects', projectSlug);
 	const fileNames = fs.readdirSync(projectAssetsPath);
-	console.log(JSON.stringify(fileNames, null, 2))
+	let filePaths = fileNames.map(fileName => `/projects/${projectSlug}/${fileName}`)
+
+
+	if (project.type === 'website') {
+		let pairs = []
+		for (let i = 0; i < filePaths.length; i += 2) {
+			pairs.push(filePaths.slice(i, i + 2));
+		}
+
+		filePaths = pairs;
+	}
 
 	return { props: { 
 		project, 
-		assets: fileNames.map(fileName => `/projects/${projectSlug}/${fileName}`)
+		assets: filePaths 
 	} };
 }
 
 export default function ProjectPage(props) {
+	const headerRef = useRef(null)
 	const pageAnim = {
 		direction: "up--project-title",
 		type: "transition-in",
@@ -46,7 +57,9 @@ export default function ProjectPage(props) {
 	);
 
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		if (headerRef.current) {
+        headerRef.current.scrollIntoView({ behavior: 'auto', block: 'end' });
+    }
 	}, []);
 
 	return (
@@ -55,7 +68,7 @@ export default function ProjectPage(props) {
 				<title>{projectTitle}</title>
 			</Head>
 			<Back />
-			<header>
+			<header ref={headerRef}>
 				<div className={`faces faces--project`}>
 					<div className="faces-row">
 						<ProjectNameContainer
@@ -75,37 +88,15 @@ export default function ProjectPage(props) {
 				</div>
 			</header>
 			<main className={`description fade-in`}>
-				<div className="description-header">
-					<div style={{width:"40rem", marginRight: "10rem", position: "relative"}}>
-						<ProjectImage src="/projects/tk-portfolio/1-desktop-video.mp4" />
-						<div 
-							style={{
-								zIndex: "9999",
-								position:"absolute",
-								width: "30%",
-								right: "-20%",
-								bottom: "5%",
-							}}
-						>
-							<ProjectImage src="/projects/tk-portfolio/1-mobile.webp" />
-						</div>
-					</div>
-				</div>
-				<div className="description-section">
-					<div className="description-column">
-						{props.assets.map((filePath, index) => (
-							<ProjectImage key={`asset-${index}`} src={filePath} />
-						))}
-					</div>
-					<div className="description-column">
-						<p
-							className="description-text"
-							dangerouslySetInnerHTML={{
-								__html: props.project.description,
-							}}
-						/>
-					</div>
-				</div>
+				{props.assets.map((path, index) => (
+					<ProjectDescriptionSection 
+						key={index}
+						index={index}
+						desktopImage={path[0]}
+						mobileImage={path[1]}
+						text={props.project.imageDescription[index]}
+					/>
+				))}
 			</main>
 		</>
 	);

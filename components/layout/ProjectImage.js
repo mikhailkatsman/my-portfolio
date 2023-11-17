@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ProjectImage(props) {
     const type = props.src.includes('desktop') ? 'desktop' : 'mobile'
-    const video = props.src.includes('video') ? true : false
+    const video = props.src.includes('.mp4') ? true : false
 
 
     return (
