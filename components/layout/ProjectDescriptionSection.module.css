@@ -1,4 +1,9 @@
-.content-container {
+.project-description-container {
+    width: 60%;
+    margin: 0 auto 10rem;
+}
+
+.image-content-container {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -17,6 +22,6 @@
     z-index: 9999;
 }
 
-.text-container {
+.image-description-container {
     width: 20%;
 }

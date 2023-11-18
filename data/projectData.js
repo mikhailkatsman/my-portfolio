@@ -83,12 +83,13 @@ export const projects = [
         mainDescription: [
             "image 1",
             "image 2",
-            "image 3"
+            "image 3",
         ],
         imageDescription: [
-            "image 1",
-            "image 2",
-            "image 3"
+            "<b>Landing Page</b><br></br>Consists of different visual blocks with relevant functionality.",
+            "<b>Brands Filter Page</b><br></br>Clean and immediate response on user input. Vertical or horizontal layout on viewport size change.",
+            "<b>Product Detail Page (PDP)</b><br></br>Responsive image grid/slider. Related products and tags.",
+            '<b>Blog Post Page</b><br></br>All text and image data passed through Prismic CMS and formated into blocks.' 
         ],
         links: [
             {
@@ -134,14 +135,16 @@ export const projects = [
         type: "website",
         excerpt: "A static website portfolio for a professional fashion photographer.",
         mainDescription: [
-            "image 1",
-            "image 2",
-            "image 3"
+            "<b>tomilakatsman.com</b> is a static website portfolio for a professional fashion photographer. The goal of the website is to channel the client's aesthetic preferences by creating an interactive grid of selected works and mixing them with stylized videos.<br></br>Decision was made to display an <i>intro</i> animation before navigating to gallery to differentiate from majority of auto-generated CMS-produced portfolios and introduce a little more personality to this website.", 
+            "Each grid element is <i>'lazy-loaded'</i> and has a small translating animation on load for more eye candy. Retaining original image's aspect ratio the grid keeps element gaps uniform. Visual fading added to highlight user selection. Page header blurs underlying parts of the grid.",
+            "I've created a custom gallery generator that takes uploaded image data, rescales it automatically (for optimisation purposes), fetches the first image as thumbnail for the grid element and populates the carousel with the rest of the image data. All the client has to do is upload images to the source directory folder.",
+            "Website files are stored on GitHub and automatically deployed by Netlify from the main repository. Any form submissions are filtered for spam before the admin is notified."
         ],
         imageDescription: [
-            "image 1",
-            "image 2",
-            "image 3"
+            "<b>Landing Page Animation</b><br></br>Using CSS key frames with scale, translate and fade properties.",
+            "<b>Gallery Page Grid</b><br></br>Custom masonry grid with lazy loading and buffering animations. Video playback possible on elements.",
+            "<b>Photoshoot Page</b><br></br>Custom carousel with cursor controls and swipe detection for mobile view.",
+            "<b>Form Submission page</b><br></br>Data passed to Netlify and sent to admin via email.",
         ],
         links: [
             {

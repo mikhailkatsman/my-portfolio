@@ -17,7 +17,7 @@
     inset: 0;
     background-size: cover;
     background-position: center;
-    box-shadow: -10px 10px 30px rgba(0,0,0,.4);
+    box-shadow: -10px 10px 30px rgba(0,0,0,.3);
     z-index: 9999;
 }
 

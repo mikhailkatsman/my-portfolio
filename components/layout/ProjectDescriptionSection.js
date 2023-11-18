@@ -17,34 +17,44 @@ export default function ProjectDescriptionSection(props) {
     };
 
     return (
-        <div 
-            className={classes['content-container']}
-            style={{ padding: align.padding }}
-        >
-            <div 
-                className={classes['desktop-image-container']}
-                style={{ order: align.order1 }}
-            >
-                <ProjectImage src={props.desktopImage} />
-                <div 
-                    className={classes['mobile-overlay-container']}
-                    style={{left: align.left }}
-                >
-                    <ProjectImage src={props.mobileImage} />
-                </div>
-            </div>
-            <div 
-                className={classes['text-container']}
-                style={{ order: align.order2 }}
-            >
+        <>
+            <div className={classes['project-description-container']}>
                 <p
-                    className={classes['description-text']}
-                    style={{ textAlign: align.textAlign }}
+                    className="description-text"
                     dangerouslySetInnerHTML={{
-                        __html: props.text,
+                        __html: props.projectDescription,
                     }}
                 />
             </div>
-        </div>
+            <div 
+                className={classes['image-content-container']}
+                style={{ padding: align.padding }}
+            >
+                <div 
+                    className={classes['desktop-image-container']}
+                    style={{ order: align.order1 }}
+                >
+                    <ProjectImage src={props.desktopImage} />
+                    <div 
+                        className={classes['mobile-overlay-container']}
+                        style={{left: align.left }}
+                    >
+                        <ProjectImage src={props.mobileImage} />
+                    </div>
+                </div>
+                <div 
+                    className={classes['image-description-container']}
+                    style={{ order: align.order2 }}
+                >
+                    <p
+                        className={classes['image-description-text']}
+                        style={{ textAlign: align.textAlign }}
+                        dangerouslySetInnerHTML={{
+                            __html: props.imageDescription,
+                        }}
+                    />
+                </div>
+            </div>
+        </>
     )
 }

@@ -94,7 +94,8 @@ export default function ProjectPage(props) {
 						index={index}
 						desktopImage={path[0]}
 						mobileImage={path[1]}
-						text={props.project.imageDescription[index]}
+						projectDescription={props.project.mainDescription[index]}
+						imageDescription={props.project.imageDescription[index]}
 					/>
 				))}
 			</main>
