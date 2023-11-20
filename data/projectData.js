@@ -100,30 +100,30 @@ export const projects = [
             }
         ],
     },
-    {
-        name: "NOWS_App",
-        slug: "nows-app",
-        technologies: [
-            "dart",
-            "flutter",
-            "firebase",
-        ],
-        type: "mobile",
-        excerpt: "Android mobile application that allows users to view and publish location tagged events.",
-        description: "<b>NOWS_app</b> is essentially a social network consisting of pins (or posts) with geolocation metadata which are displayed within a certain radius of each user. The user can view and <i>'attend'</i> the post, therefore giving it more exposure and allowing it be visible for longer.<br></br>I have used Firebase Authentication services for user sessions. Realtime Database stores text/location/image data of each post. Non-authorised users can only view recent posts, but would not be able to create any.<br></br>Flutter is cross-platform, therefore porting the app to iOS is achievable with a few small changes. For proof-of-concept I have opted to develop and test on Android platform.<br></br>A complete list of packages and dependencies can be found in GitHub repository's <b>README.md</b> file.",
-        links: [
-            {
-                label: "YouTube",
-                logo: "/logos/logo-youtube.svg",
-                url: "https://www.youtube.com/watch?v=P8iCu2nqF2k"
-            },
-            {
-                label: "GitHub",
-                logo: "/logos/logo-github.svg",
-                url: "https://github.com/mikhailkatsman/NOWS_app"
-            },
-        ]
-    },
+    // {
+    //     name: "NOWS_App",
+    //     slug: "nows-app",
+    //     technologies: [
+    //         "dart",
+    //         "flutter",
+    //         "firebase",
+    //     ],
+    //     type: "mobile",
+    //     excerpt: "Android mobile application that allows users to view and publish location tagged events.",
+    //     description: "<b>NOWS_app</b> is essentially a social network consisting of pins (or posts) with geolocation metadata which are displayed within a certain radius of each user. The user can view and <i>'attend'</i> the post, therefore giving it more exposure and allowing it be visible for longer.<br></br>I have used Firebase Authentication services for user sessions. Realtime Database stores text/location/image data of each post. Non-authorised users can only view recent posts, but would not be able to create any.<br></br>Flutter is cross-platform, therefore porting the app to iOS is achievable with a few small changes. For proof-of-concept I have opted to develop and test on Android platform.<br></br>A complete list of packages and dependencies can be found in GitHub repository's <b>README.md</b> file.",
+    //     links: [
+    //         {
+    //             label: "YouTube",
+    //             logo: "/logos/logo-youtube.svg",
+    //             url: "https://www.youtube.com/watch?v=P8iCu2nqF2k"
+    //         },
+    //         {
+    //             label: "GitHub",
+    //             logo: "/logos/logo-github.svg",
+    //             url: "https://github.com/mikhailkatsman/NOWS_app"
+    //         },
+    //     ]
+    // },
     {
         name: "TK_Portfolio",
         slug: "tk-portfolio",
