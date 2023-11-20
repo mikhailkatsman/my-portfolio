@@ -23,5 +23,31 @@
 }
 
 .image-description-container {
-    width: 20%;
+    width: 19%;
+}
+
+/* QUERIES */
+@media (max-width: 851px) and (min-height: 740px) {
+    .project-description-container {
+        width: 80%;
+    }
+    .desktop-image-container {
+        width: 100%;
+    }
+    .image-content-container {
+        flex-direction: column;
+        margin-bottom: 30rem;
+        padding: 0 !important;
+    }
+    .image-description-container {
+        width: 40%;
+        order: 2 !important;
+    }
+    .mobile-overlay-container {
+        bottom: -55%;
+        left: 65% !important;
+    }
+    .image-description-text {
+        text-align: left !important;
+    }
 }

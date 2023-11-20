@@ -79,17 +79,18 @@ export const projects = [
             "tailwind",
         ],
         type: "website",
-        excerpt: "excert",
+        excerpt: "A dynamic content aggregation platform specializing in curated fashion.",
         mainDescription: [
-            "image 1",
-            "image 2",
-            "image 3",
+            "<b>endource.com</b> is a dynamic content aggregation platform specializing in curated fashion. The website integrates and synthesizes data from various influential fashion magazines, websites, and blogs using RESTful API calls.<br></br>The platform uses <b>Prismic CMS</b> for content management, presenting a comprehensive fashion guides that showcase products endorsed by industry-leading editors and bloggers.",
+            "All page layout are done using <b>Twig</b> templating language and any UI logic is implemented with <b>JavaScript</b>. Every content block is responsive to viewport dimensions. Most of the CSS media queries are done using <b>Tailwind</b>.",
+            "Product data is passed in via a custom API and rendered on the PDP with appropriate product data, tags and product images and a dynamic list of related products. User has an option of setting notifications for when the price of the product has decreased, or redirecting to the seller's page.",
+            "Website content creators have the ability to construct <b>blog post</b> pages by selecting custom made <b>Prismic CMS</b> content blocks such as single image or image collages, quotes, text blocks with or without headers, link and list blocks."
         ],
         imageDescription: [
             "<b>Landing Page</b><br></br>Consists of different visual blocks with relevant functionality.",
             "<b>Brands Filter Page</b><br></br>Clean and immediate response on user input. Vertical or horizontal layout on viewport size change.",
             "<b>Product Detail Page (PDP)</b><br></br>Responsive image grid/slider. Related products and tags.",
-            '<b>Blog Post Page</b><br></br>All text and image data passed through Prismic CMS and formated into blocks.' 
+            "<b>Blog Post Page</b><br></br>All text and image data passed through Prismic CMS and formated into blocks."
         ],
         links: [
             {
@@ -99,30 +100,30 @@ export const projects = [
             }
         ],
     },
-    // {
-    //     name: "NOWS_App",
-    //     slug: "nows-app",
-    //     technologies: [
-    //         "dart",
-    //         "flutter",
-    //         "firebase",
-    //     ],
-    //     type: "mobile",
-    //     excerpt: "NOWS_app is an Android application that allows users to view and publish location based events.",
-    //     description: "<b>NOWS_app</b> is essentially a social network consisting of pins (or posts) with geolocation metadata which are displayed within a certain radius of each user. The user can view and <i>'attend'</i> the post, therefore giving it more exposure and allowing it be visible for longer.<br></br>I have used Firebase Authentication services for user sessions. Realtime Database stores text/location/image data of each post. Non-authorised users can only view recent posts, but would not be able to create any.<br></br>Flutter is cross-platform, therefore porting the app to iOS is achievable with a few small changes. For proof-of-concept I have opted to develop and test on Android platform.<br></br>A complete list of packages and dependencies can be found in GitHub repository's <b>README.md</b> file.",
-    //     links: [
-    //         {
-    //             label: "YouTube",
-    //             logo: "/logos/logo-youtube.svg",
-    //             url: "https://www.youtube.com/watch?v=P8iCu2nqF2k"
-    //         },
-    //         {
-    //             label: "GitHub",
-    //             logo: "/logos/logo-github.svg",
-    //             url: "https://github.com/mikhailkatsman/NOWS_app"
-    //         },
-    //     ]
-    // },
+    {
+        name: "NOWS_App",
+        slug: "nows-app",
+        technologies: [
+            "dart",
+            "flutter",
+            "firebase",
+        ],
+        type: "mobile",
+        excerpt: "Android mobile application that allows users to view and publish location tagged events.",
+        description: "<b>NOWS_app</b> is essentially a social network consisting of pins (or posts) with geolocation metadata which are displayed within a certain radius of each user. The user can view and <i>'attend'</i> the post, therefore giving it more exposure and allowing it be visible for longer.<br></br>I have used Firebase Authentication services for user sessions. Realtime Database stores text/location/image data of each post. Non-authorised users can only view recent posts, but would not be able to create any.<br></br>Flutter is cross-platform, therefore porting the app to iOS is achievable with a few small changes. For proof-of-concept I have opted to develop and test on Android platform.<br></br>A complete list of packages and dependencies can be found in GitHub repository's <b>README.md</b> file.",
+        links: [
+            {
+                label: "YouTube",
+                logo: "/logos/logo-youtube.svg",
+                url: "https://www.youtube.com/watch?v=P8iCu2nqF2k"
+            },
+            {
+                label: "GitHub",
+                logo: "/logos/logo-github.svg",
+                url: "https://github.com/mikhailkatsman/NOWS_app"
+            },
+        ]
+    },
     {
         name: "TK_Portfolio",
         slug: "tk-portfolio",
@@ -159,28 +160,39 @@ export const projects = [
             },
         ]
     },
-    // {
-    //     name: "My_Portfolio",
-    //     slug: "my-portfolio",
-    //     technologies: [
-    //         "js",
-    //         "react",
-    //         "nextjs",
-    //     ],
-    //     type: "website",
-    //     excerpt: "The website you're viewing now. Made using modern JavaScript tools like React and Next.js",
-    //     description: "For the purposes of achieving the <i>'isometric projection'</i> look of the website I've employed a set of CSS tranform properties, and applied perspertive depth to immitate <i>'z-axis'</i> in button and page transition animations. The result is a modular 3D layout, where each visible <i>'face'</i> can be treated as a normal 2D container.<br></br><b>React useState</b> hook has alowed me to specify the pan directions for transition animations depending on the chosen navigation option (like <i>'x-axis'</i> down for /contact page and right for /projects page).<br></br>Additionaly, i have utilised <b>Next.js getStaticPaths/getStaticProps</b> to pregenerate templates for project pages (like the one you're viewing now), which allows me to add project material to website's directory without modyfing any JSX components.",
-    //     links: [
-    //         {
-    //             label: "GitHub",
-    //             logo: "/logos/logo-github.svg",
-    //             url: "https://github.com/mikhailkatsman/my-portfolio"
-    //         },
-    //         {
-    //             label: "CodePen",
-    //             logo: "/logos/logo-codepen.svg",
-    //             url: "https://codepen.io/kry3er"
-    //         },
-    //     ]
-    // },
+    {
+        name: "My_Portfolio",
+        slug: "my-portfolio",
+        technologies: [
+            "js",
+            "react",
+            "nextjs",
+        ],
+        type: "website",
+        excerpt: "The website you're viewing now. Made using modern JavaScript tools like React and Next.js",
+        mainDescription: [
+            "This is my <b>portfolio page</b>. <i>There are many like it, but this one is mine</i>.<br></br>Since you've already navigated to this page, you have experienced all the implemented transition animations and an overall aesthetic of the website, so i will try and be as brief as possible.<br></br><br></br>For the purposes of achieving the <i>isometric projection</i> look of the website I've employed a set of CSS tranform properties, and applied perspertive depth to immitate the <i>z-axis</i> in button and page transition animations. The result is a modular 3D layout, where each visible <i>face</i>(or <i>plain</i>) can be treated as a normal 2-dimensional container.",
+            "React's <b>useState</b> hook has alowed me to specify the pan directions for transition animations depending on the chosen navigation option (like <b>+y</b> for /contact page and <b>+x</b> for /projects page).",
+            "The website is depeloped with a <i>mobile-first</i> approach. Each element is enlarged and made to take up as much viewport space as possible. Color palette is monochrome and typefaces are bold and clear with maximum contrast to the background, to counteract the <i>skewed</i> rendering of text and other elements.",
+            "Additionaly, i have utilised <b>Next.js getStaticPaths / getStaticProps</b> to pregenerate templates for project pages (like the one you're viewing now), which allows me to add project data to website's repository without modyfing any of the website's components. Project templates are then rendered differently depending on the specified project <i>type</i>."
+        ],
+        imageDescription: [
+            "<b>Landing Page Animation</b><br></br>Each <i>face</i> has it's own variating animation depending on the page placement.",
+            "<b>Page Transition Animation</b><br></br>Each button press passes pan directions to a global state, which in turn sets the direction of translate animation. By navigating to /about page, translate is set to <b>translateX(-...%)</b>",
+            "<b>Projects List Page</b><br></br>Each project has it's own <i>card</i> witch is lazy loaded once it enters the user's viewport. Cards also contain a custom project logo, name and a short excerpt.",
+            "<b>Project Description Page</b><br></br>Depending on the project <i>type</i> the page is rendered differently, maximizing the use of available viewport realestate and presenting image/video material appropriately.",
+        ],
+        links: [
+            {
+                label: "GitHub",
+                logo: "/logos/logo-github.svg",
+                url: "https://github.com/mikhailkatsman/my-portfolio"
+            },
+            {
+                label: "CodePen",
+                logo: "/logos/logo-codepen.svg",
+                url: "https://codepen.io/kry3er"
+            },
+        ]
+    },
 ];

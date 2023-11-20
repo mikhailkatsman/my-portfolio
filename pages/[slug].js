@@ -92,6 +92,7 @@ export default function ProjectPage(props) {
 					<ProjectDescriptionSection 
 						key={index}
 						index={index}
+						type={props.project.type}
 						desktopImage={path[0]}
 						mobileImage={path[1]}
 						projectDescription={props.project.mainDescription[index]}
