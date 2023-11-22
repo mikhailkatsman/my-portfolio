@@ -88,17 +88,30 @@ export default function ProjectPage(props) {
 				</div>
 			</header>
 			<main className={`description fade-in`}>
-				{props.assets.map((path, index) => (
-					<ProjectDescriptionSection 
-						key={index}
-						index={index}
-						type={props.project.type}
-						desktopImage={path[0]}
-						mobileImage={path[1]}
-						projectDescription={props.project.mainDescription[index]}
-						imageDescription={props.project.imageDescription[index]}
-					/>
-				))}
+				{props.project.type === "website" ? 
+					props.assets.map((path, index) => (
+						<ProjectDescriptionSection 
+							key={index}
+							index={index}
+							type={props.project.type}
+							desktopImage={path[0]}
+							mobileImage={path[1]}
+							projectDescription={props.project.mainDescription[index]}
+							imageDescription={props.project.imageDescription[index]}
+						/>
+					))
+				:
+					props.assets.map((path, index) => (
+						<ProjectDescriptionSection 
+							key={index}
+							index={index}
+							type={props.project.type}
+							image={path}
+							projectDescription={props.project.mainDescription[index]}
+							imageDescription={props.project.imageDescription[index]}
+						/>
+					))
+				}
 			</main>
 		</>
 	);

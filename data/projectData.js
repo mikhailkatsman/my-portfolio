@@ -100,30 +100,40 @@ export const projects = [
             }
         ],
     },
-    // {
-    //     name: "NOWS_App",
-    //     slug: "nows-app",
-    //     technologies: [
-    //         "dart",
-    //         "flutter",
-    //         "firebase",
-    //     ],
-    //     type: "mobile",
-    //     excerpt: "Android mobile application that allows users to view and publish location tagged events.",
-    //     description: "<b>NOWS_app</b> is essentially a social network consisting of pins (or posts) with geolocation metadata which are displayed within a certain radius of each user. The user can view and <i>'attend'</i> the post, therefore giving it more exposure and allowing it be visible for longer.<br></br>I have used Firebase Authentication services for user sessions. Realtime Database stores text/location/image data of each post. Non-authorised users can only view recent posts, but would not be able to create any.<br></br>Flutter is cross-platform, therefore porting the app to iOS is achievable with a few small changes. For proof-of-concept I have opted to develop and test on Android platform.<br></br>A complete list of packages and dependencies can be found in GitHub repository's <b>README.md</b> file.",
-    //     links: [
-    //         {
-    //             label: "YouTube",
-    //             logo: "/logos/logo-youtube.svg",
-    //             url: "https://www.youtube.com/watch?v=P8iCu2nqF2k"
-    //         },
-    //         {
-    //             label: "GitHub",
-    //             logo: "/logos/logo-github.svg",
-    //             url: "https://github.com/mikhailkatsman/NOWS_app"
-    //         },
-    //     ]
-    // },
+    {
+        name: "NOWS_App",
+        slug: "nows-app",
+        technologies: [
+            "dart",
+            "flutter",
+            "firebase",
+        ],
+        type: "mobile",
+        excerpt: "Android mobile application that allows users to view and publish location tagged events.",
+        mainDescription: [
+            "<b>tomilakatsman.com</b> is a static website portfolio for a professional fashion photographer. The goal of the website is to channel the client's aesthetic preferences by creating an interactive grid of selected works and mixing them with stylized videos.<br></br>Decision was made to display an <i>intro</i> animation before navigating to gallery to differentiate from majority of auto-generated CMS-produced portfolios and introduce a little more personality to this website.", 
+            "Each grid element is <i>'lazy-loaded'</i> and has a small translating animation on load for more eye candy. Retaining original image's aspect ratio the grid keeps element gaps uniform. Visual fading added to highlight user selection. Page header blurs underlying parts of the grid.",
+            "I've created a custom gallery generator that takes uploaded image data, rescales it automatically (for optimisation purposes), fetches the first image as thumbnail for the grid element and populates the carousel with the rest of the image data. All the client has to do is upload images to the source directory folder.",
+            "Website files are stored on GitHub and automatically deployed by Netlify from the main repository. Any form submissions are filtered for spam before the admin is notified."
+        ],
+        imageDescription: [
+            "<b>Landing Page Animation</b><br></br>Using CSS key frames with scale, translate and fade properties.",
+            "<b>Gallery Page Grid</b><br></br>Custom masonry grid with lazy loading and buffering animations. Video playback possible on elements.",
+            "<b>Photoshoot Page</b><br></br>Custom carousel with cursor controls and swipe detection for mobile view.",
+            "<b>Form Submission page</b><br></br>Data passed to Netlify and sent to admin via email.",
+        ],        links: [
+            {
+                label: "YouTube",
+                logo: "/logos/logo-youtube.svg",
+                url: "https://www.youtube.com/watch?v=P8iCu2nqF2k"
+            },
+            {
+                label: "GitHub",
+                logo: "/logos/logo-github.svg",
+                url: "https://github.com/mikhailkatsman/NOWS_app"
+            },
+        ]
+    },
     {
         name: "TK_Portfolio",
         slug: "tk-portfolio",

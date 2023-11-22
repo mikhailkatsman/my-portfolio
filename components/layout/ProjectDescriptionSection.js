@@ -1,4 +1,5 @@
-import ProjectImage from './ProjectImage'
+import WebsiteProjectImage from './WebsiteProjectImage'
+import MobileProjectImage from './MobileProjectImage';
 import classes from './ProjectDescriptionSection.module.css'
 
 export default function ProjectDescriptionSection(props) {
@@ -36,12 +37,12 @@ export default function ProjectDescriptionSection(props) {
                             className={classes['desktop-image-container']}
                             style={{ order: desktopAlign.order1 }}
                         >
-                            <ProjectImage src={props.desktopImage} />
+                            <WebsiteProjectImage src={props.desktopImage} />
                             <div 
                                 className={classes['mobile-overlay-container']}
                                 style={{left: desktopAlign.left }}
                             >
-                                <ProjectImage src={props.mobileImage} />
+                                <WebsiteProjectImage src={props.mobileImage} />
                             </div>
                         </div>
                         <div 
@@ -62,6 +63,37 @@ export default function ProjectDescriptionSection(props) {
                 </>
             )
         } else if (props.type === "mobile") {
+            return (
+                <>
+                    <div className={classes['project-description-container']}>
+                        <p
+                            className="description-text"
+                            dangerouslySetInnerHTML={{
+                                __html: props.projectDescription,
+                            }}
+                        />
+                    </div>
+                    <div 
+                        className={classes['image-content-container']}
+                    >
+                        <div 
+                            className={classes['mobile-image-container']}
+                        >
+                            <MobileProjectImage src={props.image} />
+                        </div>
+                        <div 
+                            className={classes['image-description-container']}
+                        >
+                            <p
+                                className={classes['image-description-text']}
+                                dangerouslySetInnerHTML={{
+                                    __html: props.imageDescription,
+                                }}
+                            />
+                        </div>
+                    </div>
+                </>
+            )
 
         }
     }

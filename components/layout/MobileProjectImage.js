@@ -1,18 +1,16 @@
-import classes from './ProjectImage.module.css';
+import classes from './MobileProjectImage.module.css';
 import Image from 'next/image';
 
-export default function ProjectImage(props) {
-    const type = props.src.includes('desktop') ? 'desktop' : 'mobile'
+export default function MobileProjectImage(props) {
     const video = props.src.includes('.mp4') ? true : false
 
-
     return (
-        <div className={ classes[`wrapper-${type}`] }>
-            <div className={ classes[`imageContainer-${type}`] }>
+        <div className={ classes.wrapper }>
+            <div className={ classes.imageContainer }>
                 {video ?
                     <video autoPlay loop muted playsInline
                         style={{ 
-                            borderRadius: type === 'desktop' ? "1%/1.5%" : "8%/4%",
+                            borderRadius: "7%/3%",
                             width: "100%",
                             height: "100%"
                         }}
@@ -21,7 +19,7 @@ export default function ProjectImage(props) {
                     </video>
                 :
                     <Image
-                        style={{ borderRadius: type === 'desktop' ? "0.5%/1.5%" : "8%/4%" }}
+                        style={{ borderRadius: "7%/3%" }}
                         alt="Project Image"
                         src={props.src}
                         sizes="1080px"
@@ -32,8 +30,8 @@ export default function ProjectImage(props) {
             <div 
                 className={classes.frame}
                 style={{ 
-                    backgroundImage: `url(/img/${type}.webp)`,
-                    borderRadius: type === 'desktop' ? "3.2%/4%" : "15.3%/8%"
+                    backgroundImage: `url(/img/android.webp)`,
+                    borderRadius: "9.8%/4.3%"
                 }} 
             />
         </div>

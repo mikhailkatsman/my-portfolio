@@ -1,5 +1,5 @@
 .project-description-container {
-    width: 60%;
+    width: 70%;
     margin: 0 auto 10rem;
 }
 
@@ -15,6 +15,11 @@
     position: relative;
 }
 
+.mobile-image-container {
+    width: 40%;
+    margin-left: 27.5%;
+}
+
 .mobile-overlay-container {
     position: absolute;
     width: 30%;
@@ -28,9 +33,6 @@
 
 /* QUERIES */
 @media (max-width: 851px) and (min-height: 740px) {
-    .project-description-container {
-        width: 80%;
-    }
     .desktop-image-container {
         width: 100%;
     }
