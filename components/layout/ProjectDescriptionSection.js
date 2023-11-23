@@ -74,7 +74,7 @@ export default function ProjectDescriptionSection(props) {
                         />
                     </div>
                     <div 
-                        className={classes['image-content-container']}
+                        className={`${classes['image-content-container']} ${classes['mobile-image']}`}
                     >
                         <div 
                             className={classes['mobile-image-container']}
@@ -82,7 +82,7 @@ export default function ProjectDescriptionSection(props) {
                             <MobileProjectImage src={props.image} />
                         </div>
                         <div 
-                            className={classes['image-description-container']}
+                            className={`${classes['image-description-container']} ${classes['mobile-image']}`}
                         >
                             <p
                                 className={classes['image-description-text']}

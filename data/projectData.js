@@ -111,17 +111,22 @@ export const projects = [
         type: "mobile",
         excerpt: "Android mobile application that allows users to view and publish location tagged events.",
         mainDescription: [
-            "<b>tomilakatsman.com</b> is a static website portfolio for a professional fashion photographer. The goal of the website is to channel the client's aesthetic preferences by creating an interactive grid of selected works and mixing them with stylized videos.<br></br>Decision was made to display an <i>intro</i> animation before navigating to gallery to differentiate from majority of auto-generated CMS-produced portfolios and introduce a little more personality to this website.", 
-            "Each grid element is <i>'lazy-loaded'</i> and has a small translating animation on load for more eye candy. Retaining original image's aspect ratio the grid keeps element gaps uniform. Visual fading added to highlight user selection. Page header blurs underlying parts of the grid.",
-            "I've created a custom gallery generator that takes uploaded image data, rescales it automatically (for optimisation purposes), fetches the first image as thumbnail for the grid element and populates the carousel with the rest of the image data. All the client has to do is upload images to the source directory folder.",
-            "Website files are stored on GitHub and automatically deployed by Netlify from the main repository. Any form submissions are filtered for spam before the admin is notified."
+            "The aim of the <b>NOWS</b> application is to host and display a realtime database of postcards or <i>Nowcards</i>, published by the users of the application. These Nowcards appear on the interactive map of the application as a set of clickable location markers.<br></br>Each Nowcard has a timer, and a dedicated <i>attend</i> button, that keeps track of how many other users have decided to <i>attend</i> the event. After a certain period of time has passed, the Nowcard gets deleted from the database. Each time the Nowcard <i>attend</i> button is clicked by viewers in the area, this timer is postponed.<br></br><br></br>For more information about the inner working of this application please see the <a href='https://github.com/mikhailkatsman/NOWS_app'>GitHub Repository</a>",
+            "The map screen is deliberately monochrome and void of unnecessary detail. There is a limit set for maximum and minimum zoom levels since the application aims to display Nowcard markers within a walking distance from a user. Every subsecuent interface window requested by the user, keeps the state of the Map Screen, so as to avoid unnecessary map tile fetching.",
+            "If the Firebase Authentication fails during Application initialization, the user is presented with <i>Login</i> text button, that prompts the user to input his/her credentials. If the user presses the <i>Register here!</i> button, the application displays a registration form. The registration process requires the user to: <b><br></br>- Upload an avatar image<br></br>- Create a username<br></br>- Input an existing email address<br></br>- Create a password<br></br></b>After the user submitted the registration form, the application remembers the new authentication state, and brings the newly authenticated user back to the home screen.",
+            "",
+            "When user presses the Nows post button, the application initializes a multi-stage process of creating a Nowcard. This posting process consists of:<br></br><b>- Displaying a Camera Viewport<br></br>- Requesting to input Nowcard title<br></br>- Requesting to input Nowcard description text</b><br></br>Only then can the user upload the Nowcard form. After the process is complete, the new marker will appear on the map display. This marker will be visible to all other users within the local area.",
+            "Every viewed <b>NowCard</b> consists displays time ellapsed since it's creation, displays the poster's uploaded image, title and description, and has an <i>Attend</i> button to keep track of how many other users have decided to attend the event."
         ],
         imageDescription: [
-            "<b>Landing Page Animation</b><br></br>Using CSS key frames with scale, translate and fade properties.",
-            "<b>Gallery Page Grid</b><br></br>Custom masonry grid with lazy loading and buffering animations. Video playback possible on elements.",
-            "<b>Photoshoot Page</b><br></br>Custom carousel with cursor controls and swipe detection for mobile view.",
-            "<b>Form Submission page</b><br></br>Data passed to Netlify and sent to admin via email.",
-        ],        links: [
+            "<b>Basic Operation</b><br></br>Browse the map for relevant information or attend ongoing events that might interest you.",
+            "<b>Map Tile Color Change</b><br></br>Light/Dark mode replaces the map tiles with different contrasting set, to allow for better viewing experience in direct sunlight or during nighttime.",
+            "<b>Login Process</b><br></br>Input your email and password or create a new account.",
+            "<b>Account Window</b><br></br>If the user has already authenticate the text button changes state to a Circular Avatar button. When pressed, the application shows the Account Display, which allows the user to change username, change user avatar, logout or delete user account.",
+            "<b>Making a post</b><br></br>Snap a photo, input title and description. The new Card will appear on the map for everyone to view.",
+            "<b>Viewing existing Card</b><br></br>When you're planning to visit a venue, check the map for a Card. Maybe someone shared anything of note.",
+        ],
+        links: [
             {
                 label: "YouTube",
                 logo: "/logos/logo-youtube.svg",
