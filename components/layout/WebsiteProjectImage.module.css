@@ -1,0 +1,35 @@
+.wrapper-desktop,.wrapper-mobile {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+.wrapper-desktop {
+    padding-bottom: 80.6451%;
+}
+
+.wrapper-mobile {
+    padding-bottom: 202.1661%;
+}
+
+.frame {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    box-shadow: -10px 10px 30px rgba(0,0,0,.3);
+    z-index: 9999;
+}
+
+.imageContainer-desktop {
+    position: absolute;
+    top: 7.8%;
+    left: 1.3%;
+    right: 1.3%;
+    bottom: 1.55%;
+}
+
+.imageContainer-mobile {
+    position: absolute;    
+    inset: 1.65% 3.7%;
+}
