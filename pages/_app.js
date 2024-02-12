@@ -22,11 +22,11 @@ export default function App({ Component, pageProps }) {
             <div className="background" />
 			<div className="content">
 				<Component {...pageProps} />
-				<Analytics />
 			</div>
 			<footer>
 				<p>&#169; Mikhail Katsman</p>
 			</footer>
+			<Analytics />
 		</>
 	);
 }
